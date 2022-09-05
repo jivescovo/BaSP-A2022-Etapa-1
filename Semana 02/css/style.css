@@ -11,6 +11,40 @@ aside {
     position:fixed;
 }
 
+aside a {
+    text-decoration: none;
+    color: #373867;
+    display: inline-block;
+}
+
+aside li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+}
+
+aside nav {
+    margin-left: 15px;
+    display: inline-block;
+    border-bottom: 1px solid #000;
+    padding-bottom: 30px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    width: 330px;
+}
+
+aside h3 {
+    text-decoration-line: underline;
+    text-decoration-color: orange;
+}
+
+aside div {
+    padding: 15px;
+}
+
 header {
     height: 75px;
     width: 75%;
