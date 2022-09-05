@@ -133,89 +133,118 @@
             <section id="form">
                 <h3>Get some info</h3>
                 <form>
-                    <label for="fullName">Full Name:</label>
-                    <input type="text" name="fullName" id="" placeholder="Full Name">
-                    <label for="email">Email:</label>
-                    <input type="text" name="email" id="" placeholder="Email">
-                    <label for="message">Message:</label>
-                    <textarea name="message" id="" cols="15" rows="4" placeholder="Message"></textarea>
-                    <p>Contact Area</p> 
-                    <input type="radio" name="contactArea" id="humanResources" value="humanResources">
-                    <label for="humanResources">Human Resources</label>
-                    <input type="radio" name="contactArea" id="systems" value="systems">
-                    <label for="systems">Systems</label>
-                    <input type="radio" name="contactArea" id="marketing" value="marketing">
-                    <label for="marketing">Marketing</label>
+                    <div class="form-izq">
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" name="fullName" id="" placeholder="Full Name">
+                    </div>
+                    <div class="form-izq">
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="" placeholder="Email">
+                    </div>
+                    <!--<p>Contact Area</p>-->
+                    <div class="form-der"> 
+                        <span>Contact Area</span>
+                        <div class="radio">
+                            <input type="radio" name="contactArea" id="humanResources" value="humanResources">
+                            <label for="humanResources">Human Resources</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="contactArea" id="systems" value="systems">
+                            <label for="systems">Systems</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="contactArea" id="marketing" value="marketing">
+                            <label for="marketing">Marketing</label>
+                        </div>
+                    </div>
+                    <div class="form-izq">
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="" cols="15" rows="4" placeholder="Message"></textarea>
+                    </div>
                     <input type="submit" name="" >
                     <input type="button" name="" value="Reset">
                 </form>
             </section>
-            <section>
+            <section id="history">
                 <h3>History of the business</h3>
-                <h4>The foundation</h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, modi fugit ipsa id, libero doloribus quasi tenetur deser
-                    unt ad eaque beatae eligendi assumenda odit, cupiditate reiciendis quam numquam. Laudantium, minima! Lorem ipsum dolor s
-                    it amet consectetur adipisicing elit. Ab doloremque reiciendis eius, nobis, placeat laboriosam recusandae suscipit est excepturi fugiat iusto doloribus perferendis expedita optio maxime non sapiente adipisci deserunt?
-                </p>
-                <h4>Something Else</h4>
-                <img src="./assets/personas.png" alt="People sitting on a bench discussing">
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae explicabo corporis eligendi iure deserunt. Ducimus nesciunt earum dolorem voluptas a quasi accusantium saepe obcaecati veniam, eligendi ipsum nam, amet dolore. Lorem ipsum
-                    dolor sit amet consectetur adipisicing elit. Omnis cupiditate temporibus, impedit saepe quia quo nulla officia, dolore, 
-                    animi delectus quod laboriosam vero laudantium id maxime perspiciatis numquam architecto magni? Lorem ipsum dolor sit am
-                    et consectetur adipisicing elit. Ullam neque, modi fuga nulla ab ipsam esse reiciendis exercitationem ex excepturi corru
-                    pti, quas reprehenderit, earum doloremque perferendis eligendi minima tempore accusantium. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita quas incidunt amet animi, aspernatur sequi deleniti, quidem blanditiis fuga, ab e
-                    st unde repellat debitis. Vitae eos suscipit quibusdam quam doloribus!
-                <p>
-                <img src="./assets/lámpara.png" alt="Person holding lightbulb in its hands">
+                <div class="par-1">
+                    <h4>The foundation</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, modi fugit ipsa id, libero doloribus quasi tenetur deser
+                        unt ad eaque beatae eligendi assumenda odit, cupiditate reiciendis quam numquam. Laudantium, minima! Lorem ipsum dolor s
+                        it amet consectetur adipisicing elit. Ab doloremque reiciendis eius, nobis, placeat laboriosam recusandae suscipit est excepturi fugiat iusto doloribus perferendis expedita optio maxime non sapiente adipisci deserunt?
+                    </p>
+                </div>
+                <div class="par-2">
+                    <h4>Something Else</h4>
+                    <p>
+                        <img class="img-izq" src="./assets/personas.png" alt="People sitting on a bench discussing">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae explicabo corporis eligendi iure deserunt. Ducimus nesciunt earum dolorem voluptas a quasi accusantium saepe obcaecati veniam, eligendi ipsum nam, amet dolore. Lorem ipsum
+                        dolor sit amet consectetur adipisicing elit. Omnis cupiditate temporibus, impedit saepe quia quo nulla officia, dolore, 
+                        animi delectus quod laboriosam vero laudantium id maxime perspiciatis numquam architecto magni? Lorem ipsum dolor sit am
+                        et consectetur adipisicing elit. Ullam neque, modi fuga nulla ab ipsam esse reiciendis exercitationem ex excepturi corru
+                        pti, quas reprehenderit, earum doloremque perferendis eligendi minima tempore accusantium. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita quas incidunt amet animi, aspernatur sequi deleniti, quidem blanditiis fuga, ab e
+                        st unde repellat debitis. Vitae eos suscipit quibusdam quam doloribus!
+                    </p>
+                    <p>
+                        <img class="img-der" src="./assets/lámpara.png" alt="Person holding lightbulb in its hands">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis a saepe amet ipsum incidunt quo cumque voluptate. Ipsum tenetur delectus rem ipsa. Nisi incidunt ipsa voluptatum! Minima possimus maiores maxime! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae ratione fuga dolorum, unde, excepturi enim distinctio, fugit magni tempora natus suscipit minus quos culpa necessitatibus hic. Provident, iure. Ad, libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur modi harum incidunt qui rem! Nesciunt, delectus sit voluptate dolorum tempora consequatur, aliquam consequuntur asperiores natus ducimus quasi suscipit explicabo doloribus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis consectetur, distinctio non quibusdam sint, autem iste accusamus, dolorem quidem saepe ut repudiandae officia. In quod porro nostrum, temporibus cum nemo?
+                    </p>
+                </div>
+                
             </section>
-            <section>
-                <h4>Our Products</h4>
-                <ol>
-                    <li>
-                        <a href="#">Features</a>
-                    </li>
-                    <li>
-                        <a href="#">Downloads</a>
-                    </li>
-                    <li>
-                        <a href="#">Integrations</a>
-                    </li>
-                    <li>
-                        <a href="#">Add-ons</a>
-                    </li>
-                </ol>
-                <h4>Business</h4>
-                <ol>
-                    <li>
-                        <a href="#">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#">Clients</a>
-                    </li>
-                    <li>
-                        <a href="#">Resources</a>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
-                </ol>
-                <h4>Support</h4>
-                <ol>
-                    <li>
-                        <a href="#">Help</a>
-                    </li>
-                    <li>
-                        <a href="#">Tutorials</a>
-                    </li>
-                    <li>
-                        <a href="#">API</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ol>
+            <section id="various">
+                <div class="gen-links">
+                    <h4>Our Products</h4>
+                    <ol>
+                        <li>
+                            <a href="#">Features</a>
+                        </li>
+                        <li>
+                            <a href="#">Downloads</a>
+                        </li>
+                        <li>
+                            <a href="#">Integrations</a>
+                        </li>
+                        <li>
+                            <a href="#">Add-ons</a>
+                        </li>
+                    </ol>
+                </div>
+                <div class="gen-links">
+                    <h4>Business</h4>
+                    <ol>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Clients</a>
+                        </li>
+                        <li>
+                            <a href="#">Resources</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                    </ol>
+                </div>
+                <div class="gen-links">
+                    <h4>Support</h4>
+                    <ol>
+                        <li>
+                            <a href="#">Help</a>
+                        </li>
+                        <li>
+                            <a href="#">Tutorials</a>
+                        </li>
+                        <li>
+                            <a href="#">API</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ol>
+                </div>
             </section>
         </main>
         <footer>
