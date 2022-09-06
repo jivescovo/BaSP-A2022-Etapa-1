@@ -5,11 +5,11 @@ body {
 }
 
 aside {
-    height:900px;
-    width:25%;
-    background-color:#AACE9B;
+    height: 900px;
+    width: 25%;
+    background-color: #AACE9B;
     float: left;
-    position:fixed;
+    position: fixed;
 }
 
 button {
@@ -216,7 +216,7 @@ footer {
 .uses-item {
     width: 460px;
     display: inline-block;
-    box-sizing:content-box;
+    box-sizing: content-box;
     padding: 10px;
     height: 170px;
 }
@@ -250,7 +250,7 @@ footer {
 .features-item {
     width: 460px;
     display: inline-block;
-    box-sizing:content-box;
+    box-sizing: content-box;
     padding: 10px;
     height: 360px;
     vertical-align: top;
