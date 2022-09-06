@@ -6,30 +6,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="./css/style.css">
         <title>Trackgenix: Landing Page</title>
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/all.min.css">
     </head>
     <body>
         <header>
             <div class="head">
-                <div class="head-izq">
+                <div class="header-left">
                     <p>
                         <span>Trackgenix</span> by GigaTech Software Solutions SA
                     </p>
                 </div>
-                <div class="head-der">
+                <div class="header-right">
                     <a href="https://www.facebook.com/">
-                        <img src="./assets/facebook-icon.png" alt="facebook-icon">
+                        <i class="fa-brands fa-facebook fa-2xl"></i>
+                        <!-- <img src="./assets/facebook-icon.png" alt="facebook-icon"> -->
                     </a>
                     <a href="https://www.instagram.com/">
-                        <img src="./assets/instagram-icon.png" alt="instagram-icon">
+                        <i class="fa-brands fa-instagram fa-2xl"></i>
+                        <!-- <img src="./assets/instagram-icon.png" alt="instagram-icon"> -->
                     </a>
                     <a href="https://twitter.com/?lang=en">
-                        <img src="./assets/twitter-icon.png" alt="twitter-icon">
+                        <i class="fa-brands fa-twitter fa-2xl"></i>
+                        <!-- <img src="./assets/twitter-icon.png" alt="twitter-icon"> -->
                     </a>
                     <a href="https://github.com/">
-                        <img src="./assets/github-icon.png" alt="github-icon">
+                        <i class="fa-brands fa-github fa-2xl"></i>
+                        <!-- <img src="./assets/github-icon.png" alt="github-icon"> -->
                     </a>
                     <a href="https://www.linkedin.com/">
-                        <img src="./assets/linkedin-icon.png" alt="linkedin-icon">
+                        <i class="fa-brands fa-linkedin fa-2xl"></i>
+                        <!-- <img src="./assets/linkedin-icon.png" alt="linkedin-icon"> -->
                     </a>
                 </div>
             </div>
@@ -60,13 +69,16 @@
                 </p>
                 <ul>
                     <li>
-                        <img src="./assets/mail-icon.png" alt="mail-icon"> infotrackgenix@something.idk
+                        <!-- <img class="img-aside" src="./assets/mail-icon.png" alt="mail-icon">-->
+                        <i class="fa-regular fa-envelope"></i> infotrackgenix@something.idk 
                     </li>
                     <li>
-                        <img src="./assets/house-icon.png" alt="mail-icon"> 1234 Somewhere Road #8254 Nashville, TN 00000-0000
+                        <!-- <img class="img-aside" src="./assets/house-icon.png" alt="mail-icon">--> 
+                        <i class="fa-solid fa-house"></i> 1234 Somewhere Road #8254 Nashville, TN 00000-0000
                     </li>
                     <li>
-                        <img src="./assets/phone-icon.png" alt="mail-icon"> (000) 000-0000
+                        <!-- <img class="img-aside" src="./assets/phone-icon.png" alt="mail-icon">  -->
+                        <i class="fa-solid fa-phone"></i> (000) 000-0000 
                     </li>
                 </ul>
             </div>
@@ -74,8 +86,8 @@
         <main>
             <section id="intro">
                 <div>
-                    <div class="intro-izq">
-                        <div class="titulo">
+                    <div class="intro-left">
+                        <div class="title">
                             <h1>Hi, I'm Trackgenix</h1>                        
                             <h1>by GigaTech Software Solutions SA</h1>
                         </div>
@@ -83,9 +95,11 @@
                         <p>
                             Trackgenix is a web system which facilitates the registration of hours worked by each employee in each project and work team.
                         </p>
-                        <button type="button">LEARN MORE</button>
+                        <div>
+                            <button type="button">LEARN MORE</button>
+                        </div>
                     </div>
-                    <div class="intro-der">
+                    <div class="intro-right">
                         <img src="./assets/header-image.png" alt="Person using laptop">
                     </div>
                 </div>
@@ -231,7 +245,7 @@
                 <h3>Get some info</h3>
                 <form>
                     <div>
-                        <div class="form-izq">
+                        <div class="form-left">
                             <div>
                                 <p>
                                     <label for="fullName">Full Name:</label>
@@ -245,9 +259,8 @@
                                 <input type="text" name="email" id="" placeholder="Email">
                             </div>
                         </div>
-                        <!--<p>Contact Area</p>-->
-                        <div class="form-der"> 
-                            <span>Contact Area</span>
+                        <div class="form-right"> 
+                            <p>Contact Area</p>
                             <div class="radio">
                                 <input type="radio" name="contactArea" id="humanResources" value="humanResources">
                                 <label for="humanResources">Human Resources</label>
@@ -269,8 +282,8 @@
                         <textarea name="message" id="" cols="15" rows="4" placeholder="Message"></textarea>
                     </div>
                     <div class="form-footer">
-                        <input type="button" name="" value="Reset">
-                        <input type="submit" name="" >
+                        <input type="button" name="" value="Reset" id="reset">
+                        <input type="submit" name="" value="Send" id="submit">
                     </div>
                 </form>
             </section>
@@ -287,7 +300,7 @@
                 <div class="par-2">
                     <h4>Something Else</h4>
                     <p>
-                        <img class="img-izq" src="./assets/personas.png" alt="People sitting on a bench discussing">
+                        <img class="img-left" src="./assets/personas.png" alt="People sitting on a bench discussing">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae explicabo corporis eligendi iure deserunt. Ducimus nesciunt earum dolorem voluptas a quasi accusantium saepe obcaecati veniam, eligendi ipsum nam, amet dolore. Lorem ipsum
                         dolor sit amet consectetur adipisicing elit. Omnis cupiditate temporibus, impedit saepe quia quo nulla officia, dolore, 
                         animi delectus quod laboriosam vero laudantium id maxime perspiciatis numquam architecto magni? Lorem ipsum dolor sit am
@@ -296,7 +309,7 @@
                         st unde repellat debitis. Vitae eos suscipit quibusdam quam doloribus!
                     </p>
                     <p>
-                        <img class="img-der" src="./assets/lámpara.png" alt="Person holding lightbulb in its hands">
+                        <img class="img-right" src="./assets/lámpara.png" alt="Person holding lightbulb in its hands">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis a saepe amet ipsum incidunt quo cumque voluptate. Ipsum tenetur delectus rem ipsa. Nisi incidunt ipsa voluptatum! Minima possimus maiores maxime! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae ratione fuga dolorum, unde, excepturi enim distinctio, fugit magni tempora natus suscipit minus quos culpa necessitatibus hic. Provident, iure. Ad, libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur modi harum incidunt qui rem! Nesciunt, delectus sit voluptate dolorum tempora consequatur, aliquam consequuntur asperiores natus ducimus quasi suscipit explicabo doloribus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis consectetur, distinctio non quibusdam sint, autem iste accusamus, dolorem quidem saepe ut repudiandae officia. In quod porro nostrum, temporibus cum nemo?
                     </p>
                 </div>
@@ -360,19 +373,24 @@
             <div class="foot-main">
                 <div class="footer-socials">
                     <a href="https://www.facebook.com/">
-                        <img src="./assets/facebook-icon.png" alt="facebook-icon">
+                        <i class="fa-brands fa-facebook fa-2xl"></i>
+                        <!-- <img src="./assets/facebook-icon.png" alt="facebook-icon"> -->
                     </a>
                     <a href="https://www.instagram.com/">
-                        <img src="./assets/instagram-icon.png" alt="instagram-icon">
+                        <i class="fa-brands fa-instagram fa-2xl"></i>
+                        <!-- <img src="./assets/instagram-icon.png" alt="instagram-icon"> -->
                     </a>
                     <a href="https://twitter.com/?lang=en">
-                        <img src="./assets/twitter-icon.png" alt="twitter-icon">
+                        <i class="fa-brands fa-twitter fa-2xl"></i>
+                        <!-- <img src="./assets/twitter-icon.png" alt="twitter-icon"> -->
                     </a>
                     <a href="https://github.com/">
-                        <img src="./assets/github-icon.png" alt="github-icon">
+                        <i class="fa-brands fa-github fa-2xl"></i>
+                        <!-- <img src="./assets/github-icon.png" alt="github-icon"> -->
                     </a>
                     <a href="https://www.linkedin.com/">
-                        <img src="./assets/linkedin-icon.png" alt="linkedin-icon">
+                        <i class="fa-brands fa-linkedin fa-2xl"></i>
+                        <!-- <img src="./assets/linkedin-icon.png" alt="linkedin-icon"> -->
                     </a>
                 </div>
                 <div class="footer-copyright">
