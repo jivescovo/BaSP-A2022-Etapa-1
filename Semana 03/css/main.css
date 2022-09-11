@@ -69,4 +69,161 @@
     text-align: justify;
 }
 
+.flex-container-features {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 35px 8px 35px 8px;
+}
 
+#features {
+    padding-bottom: 18.72px;
+    border-bottom: 2px solid #000;
+}
+
+.features-item {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    /* border: 1px solid #000; */
+    /* padding: 10px; */
+    /* height: 360px; */
+    /* height: 45%; */
+    /* vertical-align: top; */ /*PODRIA QUITARLO?*/
+    /* margin: 5px; */
+}
+
+.full-size-features {
+    /* height: 180px;
+    width: 220px; */
+    max-width: 100%;
+}
+
+.features-text {
+    text-align: justify; /*ME CONVIENE AGRUPAR TODOS LOS TEXT ALIGN EN UN SOLO ELEMENTO?*/
+}
+
+#form {
+    /* padding: 35px 8px 35px 8px; */
+    border-bottom: 2px solid #000;
+}
+
+.flex-container-form {
+    padding: 35px 0 35px 0;
+    margin: 0px 35px 0 35px;
+}
+
+/* .flex-container-form-top, .flex-container-form-bott {
+    margin: 0 35px 0 35px;
+} */
+
+.flex-container-form-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid #000; */
+    /* margin-bottom: 10px; */
+}
+
+.form-left {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    /* border: 1px solid #000; */
+}
+
+.form-right {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    /* border: 1px solid #000; */
+}
+
+.form-left input {
+    width: 90%;
+    height: 30px;
+}
+
+.flex-container-form-bott {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid #000; */
+}
+
+.flex-container-form-footer {
+    display: flex;
+    width: 100%;
+    /* border: 1px solid #000; */
+}
+
+.radio {
+    display: block;
+}
+
+#history {
+    padding: 35px 8px 35px 8px;
+
+    border-bottom: 2px solid #000;
+}
+
+.flex-container-history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+.flex-container-history-par1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container-history-par2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-container-history-par2-a, .flex-container-history-par2-b  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#various {
+    border-bottom: 2px solid #000;
+}
+
+.flex-container-various {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gen-links {
+    text-align: center;
+    /* border: 1px solid #000; */
+}
+
+/* .gen-links {
+    display: inline-block;
+    padding: 0;
+    width: 320px;
+    text-align: center;
+}
+
+.gen-links ol {
+    display: inline-block;
+    padding: 0;
+}
+
+.gen-links a {
+    text-decoration: none;
+} */

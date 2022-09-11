@@ -293,28 +293,20 @@ i:hover {
     text-align: justify;
 } */
 
-#features {
+/* #features {
     padding-bottom: 18.72px;
     border-bottom: 2px solid #000;
 }
 
 .features-item {
-    /* width: 460px; */
-    display: inline-block;
-    width: 45%; /*FUNCIONA BIEN CON ESTE ANCHO TAMBIEN, 474 TE QUEDA*/
-    /* box-sizing: content-box; */
+    width: 45%; 
     padding: 10px;
-    /* height: 360px; */
-    height: 45%; /*427PX Y ENTRA BIEN? WUT*/
-    /* vertical-align: top; */ /*PODRIA QUITARLO?*/
+    height: 45%; 
     margin: 5px;
 }
 
 .features-img {
     width: 30%;
-    /* padding-right: 10px;
-    padding-top: 15px;
-    padding-bottom: 10px; */
     padding: 15px 10px 10px 0;
     margin: 0;
 }
@@ -325,10 +317,10 @@ i:hover {
 }
 
 .features-text {
-    text-align: justify; /*ME CONVIENE AGRUPAR TODOS LOS TEXT ALIGN EN UN SOLO ELEMENTO?*/
-}
+    text-align: justify; 
+} */
 
-#form {
+/* #form {
     overflow: auto;
     padding-bottom: 18.72px;
     border-bottom: 2px solid #000;
@@ -346,7 +338,7 @@ i:hover {
 .form-left input {
     width: 90%;
     height: 30px;
-}
+} */
 
 /*RESULTAN REDUNDANTES CON RESPECTO A LO QUE DEFINO EN LA LINEA 359 MAS ABAJO*/
 /* #form .form-left { 
@@ -368,9 +360,9 @@ i:hover {
     padding-top: 10px;
 } */
 
-.form-right {
+/* .form-right {
     padding-top: 10px;
-}
+} */
 
 /*CREO QUE NO HACE NADA YA QUE NO TENGO NINGUN SPAN*/
 /* .form-right span { 
@@ -378,7 +370,7 @@ i:hover {
     display: block;
 } */
 
-.form-bott {
+/* .form-bott {
     float: left;
     width: 100%;
     padding-bottom: 10px;
@@ -390,14 +382,13 @@ i:hover {
 
 .form-footer {
     width: 100%;
-    /* float: left; */ /*AL PEDO ME PARECE*/
 }
 
 .radio {
     display: block;
-}
+} */
 
-#history {
+/* #history {
     border-bottom: 2px solid #000;
 }
 
@@ -407,31 +398,26 @@ i:hover {
 
 .par-1 {
     display: inline-block;
-    /* width: 910px; */ /*QUEDA MEJOR QUE OCUPE TODO EL ANCHO OSEA SIN EL WIDTH*/
-    /* padding: 10px; */
     text-align: justify;
 }
 
 .par-2 {
-    /* padding: 10px; */
     text-align: justify;
 }
 
 .img-left {
     float: left;
-    /* padding: 10px; */
     width: 300px;
 }
 
 .img-right {
     float: right;
     width: 300px;
-    /* padding: 10px; */
-}
+} */
 
 /*ME CONVIENE AGRUPAR UNA PROPIEDAD DE VARIOS SELECTORES EN UN ELEMENTO?*/
 
-#various {
+/* #various {
     border-bottom: 2px solid #000;
 }
 
@@ -449,10 +435,9 @@ i:hover {
 
 .gen-links a {
     text-decoration: none;
-    /* color: #373867; */ /*NO HACE FALTA YA QUE TODO TEXTO DEL BODY USA ESTE COLOR*/
-}
+} */
 
-footer {
+/* footer {
     height: 85px;
     width: 75%;
     padding: 15px;
@@ -465,7 +450,7 @@ footer {
 
 .footer-copyright {
     text-align: center;
-}
+} */
 
 @media screen and (max-width: 480px) {
     h1 {
@@ -484,7 +469,7 @@ footer {
         font-size: 10px;
     }
 
-    p {
+    p, span{
         font-size: 8px;
     }
 
@@ -502,5 +487,37 @@ footer {
 
     .flex-container-uses { /*COMO PUEDO HACER ESTO SI NO ES CON MEDIA QUERY?*/
         flex-direction: column;
+    }
+
+    #features h2 {
+        text-align: center;
+    }
+
+    .flex-container-features { /*COMO PUEDO HACER ESTO SI NO ES CON MEDIA QUERY?*/
+        flex-direction: column;
+    }
+
+    #form h2 {
+        text-align: center;
+    }
+
+    .flex-container-form-top {
+        flex-direction: column;
+    }
+
+    .form-left, .form-left input { /*PUEDO USAR MEDIA QUERY PARA ESTO?*/
+        width: 100%;
+    }
+
+    .flex-container-form-footer {
+        justify-content: center;
+    }
+
+    #history h2 {
+        text-align: center;
+    }
+
+    .footer-socials i {
+        font-size: 14px;
     }
 }

@@ -4,9 +4,11 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="./css/style.css">
         <link rel="stylesheet" type="text/css" href="./css/header.css">
+        <link rel="stylesheet" type="text/css" href="./css/footer.css">
         <link rel="stylesheet" type="text/css" href="./css/main.css">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+
         <title>Trackgenix: Landing Page</title>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <!-- <link rel="stylesheet" href="./css/reset.css"> -->
@@ -156,63 +158,65 @@
             </section>
             <section id="features">
                 <h2>Features</h2>
-                <div class="features-item">
-                    <div class="features-img">
-                        <img class="full-size-features" src="./assets/reloj.png" alt="Clock">
+                <div class="flex-container-features">
+                    <div class="features-item">
+                        <div class="features-img">
+                            <img class="full-size-features" src="./assets/reloj.png" alt="Clock">
+                        </div>
+                        <div class="features-text">
+                            <span>Hours Log</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi tenetur saepe assumenda maxime necessitatibus voluptatem 
+                                iusto ab animi accusantium facere enim, molestias suscipit magni illum. Labore maxime ipsam incidunt eveniet?
+                            </p>
+                            <button type="button">MORE</button>
+                        </div>
                     </div>
-                    <div class="features-text">
-                        <span>Hours Log</span>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi tenetur saepe assumenda maxime necessitatibus voluptatem 
-                            iusto ab animi accusantium facere enim, molestias suscipit magni illum. Labore maxime ipsam incidunt eveniet?
-                        </p>
-                        <button type="button">MORE</button>
+                    <div class="features-item">
+                        <div class="features-img">
+                            <img class="full-size-features" src="./assets/books.png" alt="Stacked books">
+                        </div>
+                        <div class="features-text">
+                            <span>Reports</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi tenetur saepe assumenda maxime necessitatibus voluptatem 
+                                iusto ab animi accusantium facere enim, molestias suscipit magni illum. Labore maxime ipsam incidunt eveniet?
+                            </p>
+                            <button type="button">MORE</button>
+                        </div>
                     </div>
-                </div>
-                <div class="features-item">
-                    <div class="features-img">
-                        <img class="full-size-features" src="./assets/books.png" alt="Stacked books">
+                    <div class="features-item">
+                        <div class="features-img">
+                            <img class="full-size-features" src="./assets/board.png" alt="Cork board">
+                        </div>
+                        <div class="features-text">
+                            <span>Resource Management</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi tenetur saepe assumenda maxime necessitatibus voluptatem 
+                                iusto ab animi accusantium facere enim, molestias suscipit magni illum. Labore maxime ipsam incidunt eveniet? 
+                            </p>
+                            <button type="button">MORE</button>
+                        </div>
                     </div>
-                    <div class="features-text">
-                        <span>Reports</span>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi tenetur saepe assumenda maxime necessitatibus voluptatem 
-                            iusto ab animi accusantium facere enim, molestias suscipit magni illum. Labore maxime ipsam incidunt eveniet?
-                        </p>
-                        <button type="button">MORE</button>
-                    </div>
-                </div>
-                <div class="features-item">
-                    <div class="features-img">
-                        <img class="full-size-features" src="./assets/board.png" alt="Cork board">
-                    </div>
-                    <div class="features-text">
-                        <span>Resource Management</span>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi tenetur saepe assumenda maxime necessitatibus voluptatem 
-                            iusto ab animi accusantium facere enim, molestias suscipit magni illum. Labore maxime ipsam incidunt eveniet? 
-                        </p>
-                        <button type="button">MORE</button>
-                    </div>
-                </div>
-                <div class="features-item">
-                    <div class="features-img">
-                        <img class="full-size-features" src="./assets/team.png" alt="Group of people working together">
-                    </div>
-                    <div class="features-text">
-                        <span>Multiple Roles</span>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi tenetur saepe assumenda maxime necessitatibus voluptatem 
-                            iusto ab animi accusantium facere enim, molestias suscipit magni illum. Labore maxime ipsam incidunt eveniet?
-                        </p>
-                        <button type="button">MORE</button>
+                    <div class="features-item">
+                        <div class="features-img">
+                            <img class="full-size-features" src="./assets/team.png" alt="Group of people working together">
+                        </div>
+                        <div class="features-text">
+                            <span>Multiple Roles</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi tenetur saepe assumenda maxime necessitatibus voluptatem 
+                                iusto ab animi accusantium facere enim, molestias suscipit magni illum. Labore maxime ipsam incidunt eveniet?
+                            </p>
+                            <button type="button">MORE</button>
+                        </div>
                     </div>
                 </div>
             </section>
             <section id="form">
                 <h2>Get some info</h2>
-                <form>
-                    <div>
+                <form class="flex-container-form">
+                    <div class="flex-container-form-top">
                         <div class="form-left">
                             <div>
                                 <p>
@@ -243,13 +247,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-bott">
+                    <div class="flex-container-form-bott">
                         <p>
                             <label for="message">Message:</label>
                         </p>
                         <textarea name="message" id="" cols="15" rows="4" placeholder="Message"></textarea>
                     </div>
-                    <div class="form-footer">
+                    <div class="flex-container-form-footer">
                         <input type="button" name="" value="Reset" id="reset">
                         <input type="submit" name="" value="Send" id="submit">
                     </div>
@@ -257,100 +261,112 @@
             </section>
             <section id="history">
                 <h2>History of the business</h2>
-                <div class="par-1">
-                    <h4>The foundation</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, modi fugit ipsa id, libero doloribus quasi tenetur deser
-                        unt ad eaque beatae eligendi assumenda odit, cupiditate reiciendis quam numquam. Laudantium, minima! Lorem ipsum dolor s
-                        it amet consectetur adipisicing elit. Ab doloremque reiciendis eius, nobis, placeat laboriosam recusandae suscipit est
-                        excepturi fugiat iusto doloribus perferendis expedita optio maxime non sapiente adipisci deserunt?
-                    </p>
-                </div>
-                <div class="par-2">
-                    <h4>Something Else</h4>
-                    <p>
-                        <img class="img-left" src="./assets/personas.png" alt="People sitting on a bench discussing">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae explicabo corporis eligendi iure deserunt. 
-                        Ducimus nesciunt earum dolorem voluptas a quasi accusantium saepe obcaecati veniam, eligendi ipsum nam, amet dolore. 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis cupiditate temporibus, impedit saepe quia quo nulla officia,
-                        dolore, animi delectus quod laboriosam vero laudantium id maxime perspiciatis numquam architecto magni? Lorem ipsum dolor
-                        sit am et consectetur adipisicing elit. Ullam neque, modi fuga nulla ab ipsam esse reiciendis exercitationem ex excepturi
-                        corrupti, quas reprehenderit, earum doloremque perferendis eligendi minima tempore accusantium.
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita quas incidunt amet animi, aspernatur sequi deleniti, 
-                        quidem blanditiis fuga, ab est unde repellat debitis. Vitae eos suscipit quibusdam quam doloribus!
-                    </p>
-                    <p>
-                        <img class="img-right" src="./assets/lámpara.png" alt="Person holding lightbulb in its hands">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis a saepe amet ipsum incidunt quo cumque voluptate.
-                        Ipsum tenetur delectus rem ipsa. Nisi incidunt ipsa voluptatum! Minima possimus maiores maxime! 
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Vitae ratione fuga dolorum, unde, excepturi enim distinctio, fugit magni tempora natus
-                        suscipit minus quos culpa necessitatibus hic. Provident, iure. Ad, libero? 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur modi harum incidunt qui rem! 
-                        Nesciunt, delectus sit voluptate dolorum tempora consequatur, aliquam consequuntur
-                        asperiores natus ducimus quasi suscipit explicabo doloribus. Lorem ipsum, dolor sit 
-                        amet consectetur adipisicing elit. Debitis consectetur, distinctio non quibusdam sint,
-                        autem iste accusamus, dolorem quidem saepe ut repudiandae officia. In quod porro nostrum,
-                        temporibus cum nemo?
-                    </p>
+                <div class="flex-container-history">
+                    <div class="flex-container-history-par1">
+                        <h4>The foundation</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, modi fugit ipsa id, libero doloribus quasi tenetur deser
+                            unt ad eaque beatae eligendi assumenda odit, cupiditate reiciendis quam numquam. Laudantium, minima! Lorem ipsum dolor s
+                            it amet consectetur adipisicing elit. Ab doloremque reiciendis eius, nobis, placeat laboriosam recusandae suscipit est
+                            excepturi fugiat iusto doloribus perferendis expedita optio maxime non sapiente adipisci deserunt?
+                        </p>
+                    </div>
+                    <div class="flex-container-history-par2">
+                        <h4>Something Else</h4>
+                        <div class="flex-container-history-par2-a">
+                            <div>
+                                <img class="img-left" src="./assets/personas.png" alt="People sitting on a bench discussing">
+                            </div>
+                            <div>
+                                <p>   
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae explicabo corporis eligendi iure deserunt. 
+                                    Ducimus nesciunt earum dolorem voluptas a quasi accusantium saepe obcaecati veniam, eligendi ipsum nam, amet dolore. 
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis cupiditate temporibus, impedit saepe quia quo nulla officia,
+                                    dolore, animi delectus quod laboriosam vero laudantium id maxime perspiciatis numquam architecto magni? Lorem ipsum dolor
+                                    sit am et consectetur adipisicing elit. Ullam neque, modi fuga nulla ab ipsam esse reiciendis exercitationem ex excepturi
+                                    corrupti, quas reprehenderit, earum doloremque perferendis eligendi minima tempore accusantium.
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita quas incidunt amet animi, aspernatur sequi deleniti, 
+                                    quidem blanditiis fuga, ab est unde repellat debitis. Vitae eos suscipit quibusdam quam doloribus!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex-container-history-par2-b">
+                            <img class="img-right" src="./assets/lámpara.png" alt="Person holding lightbulb in its hands">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis a saepe amet ipsum incidunt quo cumque voluptate.
+                                Ipsum tenetur delectus rem ipsa. Nisi incidunt ipsa voluptatum! Minima possimus maiores maxime! 
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Vitae ratione fuga dolorum, unde, excepturi enim distinctio, fugit magni tempora natus
+                                suscipit minus quos culpa necessitatibus hic. Provident, iure. Ad, libero? 
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur modi harum incidunt qui rem! 
+                                Nesciunt, delectus sit voluptate dolorum tempora consequatur, aliquam consequuntur
+                                asperiores natus ducimus quasi suscipit explicabo doloribus. Lorem ipsum, dolor sit 
+                                amet consectetur adipisicing elit. Debitis consectetur, distinctio non quibusdam sint,
+                                autem iste accusamus, dolorem quidem saepe ut repudiandae officia. In quod porro nostrum,
+                                temporibus cum nemo?
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section id="various">
-                <div class="gen-links">
-                    <h4>Our Products</h4>
-                    <ol>
-                        <li>
-                            <a href="#">Features</a>
-                        </li>
-                        <li>
-                            <a href="#">Downloads</a>
-                        </li>
-                        <li>
-                            <a href="#">Integrations</a>
-                        </li>
-                        <li>
-                            <a href="#">Add-ons</a>
-                        </li>
-                    </ol>
-                </div>
-                <div class="gen-links">
-                    <h4>Business</h4>
-                    <ol>
-                        <li>
-                            <a href="#">About Us</a>
-                        </li>
-                        <li>
-                            <a href="#">Clients</a>
-                        </li>
-                        <li>
-                            <a href="#">Resources</a>
-                        </li>
-                        <li>
-                            <a href="#">Blog</a>
-                        </li>
-                    </ol>
-                </div>
-                <div class="gen-links">
-                    <h4>Support</h4>
-                    <ol>
-                        <li>
-                            <a href="#">Help</a>
-                        </li>
-                        <li>
-                            <a href="#">Tutorials</a>
-                        </li>
-                        <li>
-                            <a href="#">API</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                    </ol>
+                <div class="flex-container-various">
+                    <div class="gen-links">
+                        <h4>Our Products</h4>
+                        <ol>
+                            <li>
+                                <a href="#">Features</a>
+                            </li>
+                            <li>
+                                <a href="#">Downloads</a>
+                            </li>
+                            <li>
+                                <a href="#">Integrations</a>
+                            </li>
+                            <li>
+                                <a href="#">Add-ons</a>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="gen-links">
+                        <h4>Business</h4>
+                        <ol>
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Clients</a>
+                            </li>
+                            <li>
+                                <a href="#">Resources</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="gen-links">
+                        <h4>Support</h4>
+                        <ol>
+                            <li>
+                                <a href="#">Help</a>
+                            </li>
+                            <li>
+                                <a href="#">Tutorials</a>
+                            </li>
+                            <li>
+                                <a href="#">API</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ol>
+                    </div>
                 </div>
             </section>
         </main>
         <footer>
-            <div class="foot-main">
+            <div class="flex-container-footer">
                 <div class="footer-socials">
                     <a href="https://www.facebook.com/">
                         <i class="fa-brands fa-facebook fa-2xl"></i>
