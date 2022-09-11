@@ -5,6 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" type="text/css" href="./css/header.css">
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
         <title>Trackgenix: Landing Page</title>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <!-- <link rel="stylesheet" href="./css/reset.css"> -->
@@ -49,7 +51,7 @@
             </div>
         </aside>
         <header>
-            <div class="head">
+            <div class="head flex-container-header">
                 <div class="header-left">
                     <p>
                         <span>Trackgenix</span> by GigaTech Software Solutions SA
@@ -76,7 +78,7 @@
         </header>
         <main>
             <section id="intro">
-                <div>
+                <div class="flex-container-intro">
                     <div class="intro-left">
                         <div class="title">
                             <h1>Hi, I'm Trackgenix</h1> <!--Ver de corregir esto-->                        
@@ -87,63 +89,68 @@
                             Trackgenix is a web system which facilitates the registration of hours worked by each employee in each project 
                             and work team.
                         </p>
-                        <div>
+                        <!-- <div>
                             <button type="button">LEARN MORE</button>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="intro-right">
                         <img src="./assets/header-image.png" alt="Person using laptop">
                     </div>
                 </div>
+                <div class="intro-button">
+                    <button type="button">LEARN MORE</button>
+                </div> 
             </section>
             <section id="uses">
                 <h2>Why you should use me</h2>
-                <div class="uses-item">
-                    <div class="uses-img">
-                        <img class="full-size" src="./assets/group-of-blocks.png" alt="Multicolor Blocks">
+                <div class="flex-container-uses">
+                    <div class="uses-item">
+                        <div class="uses-img">
+                            <img class="full-size" src="./assets/group-of-blocks.png" alt="Multicolor Blocks">
+                        </div>
+                        <div class="uses-text">
+                            <span>Productivity Booster</span>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero voluptatem dolor in provident cum quae facilis. 
+                                Sapiente, possimus culpa asperiores cupiditate similique dolor, explicabo praesentium!
+                            </p>
+                        </div>
                     </div>
-                    <div class="uses-text">
-                        <span>Productivity Booster</span>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero voluptatem dolor in provident cum quae facilis. 
-                            Sapiente, possimus culpa asperiores cupiditate similique dolor, explicabo praesentium!
-                        </p>
+                    <div class="uses-item">
+                        <div class="uses-img">
+                            <img class="full-size" src="./assets/stack-of-disks.png" alt="Circular Stack">
+                        </div>
+                        <div class="uses-text">
+                            <span>Work Traceability</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere quas quibusdam nihil nesciunt nemo sint assumenda,
+                                impe dit laudantium provident consequuntur magni unde eius vel fugiat consectetur voluptatibus odio rem? Illo.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="uses-item">
-                    <div class="uses-img">
-                        <img class="full-size" src="./assets/stack-of-disks.png" alt="Circular Stack">
+                    <div class="uses-item">
+                        <div class="uses-img">
+                            <img class="full-size" src="./assets/rocket-launch.png" alt="Rocket being launched">
+                        </div>
+                        <div class="uses-text">
+                            <span>Leadership and Team Management</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae dolorem facilis ad, consectetur in corporis harum sint v
+                                ero, vel omnis porro dolorum accusamus voluptatum tempore nisi nobis, maxime ex explicabo.
+                            </p>
+                        </div>
                     </div>
-                    <div class="uses-text">
-                        <span>Work Traceability</span>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere quas quibusdam nihil nesciunt nemo sint assumenda,
-                            impe dit laudantium provident consequuntur magni unde eius vel fugiat consectetur voluptatibus odio rem? Illo.
-                        </p>
-                    </div>
-                </div>
-                <div class="uses-item">
-                    <div class="uses-img">
-                        <img class="full-size" src="./assets/rocket-launch.png" alt="Rocket being launched">
-                    </div>
-                    <div class="uses-text">
-                        <span>Leadership and Team Management</span>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae dolorem facilis ad, consectetur in corporis harum sint v
-                            ero, vel omnis porro dolorum accusamus voluptatum tempore nisi nobis, maxime ex explicabo.
-                        </p>
-                    </div>
-                </div>
-                <div class="uses-item">
-                    <div class="uses-img">
-                        <img class="full-size" src="./assets/people-following.png" alt="People being led">
-                    </div>
-                    <div class="uses-text">
-                        <span>Decision Making</span>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore aut rem atque. Architecto suscipit magni quisquam ut, 
-                            earum distinctio, velit beatae iure quis inventore minima ullam! Aut mollitia illo cumque!
-                        </p>
+                    <div class="uses-item">
+                        <div class="uses-img">
+                            <img class="full-size" src="./assets/people-following.png" alt="People being led">
+                        </div>
+                        <div class="uses-text">
+                            <span>Decision Making</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore aut rem atque. Architecto suscipit magni quisquam ut, 
+                                earum distinctio, velit beatae iure quis inventore minima ullam! Aut mollitia illo cumque!
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>

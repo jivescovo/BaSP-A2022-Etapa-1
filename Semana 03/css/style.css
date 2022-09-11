@@ -17,10 +17,10 @@ body {
     width: 25%;
 } */
 
-header, main, footer {
+/* header, main, footer {
     float: right;
     width: 75%;
-}
+} */
 
 a {
     padding-left: 5px;
@@ -61,6 +61,7 @@ span {
 }
 
 aside {
+    display: none;
     float: left;
     position: fixed;
     width: 25%;
@@ -145,6 +146,7 @@ aside a {
     display: inline-block;
     text-decoration: none;
 }
+
 /*CREO QUE PODRIA REEMPLAZAR TODOS LOS A HOVER POR EL PRIMER SELECTOR DE ARRIBA*/
 /* aside a:hover {
     color: #FF5349;
@@ -170,26 +172,26 @@ aside div i {
     padding-right: 8px;
 }
 
-header {
+/* header {
     height: 75px;
     padding: 15px;
-}
+} */
 
-.head {
+/* .head {
     overflow: hidden;
     border-bottom: 2px solid #FF3E1D;
-}
+} */
 
-.header-left, .header-right {
+/* .header-left, .header-right {
     float: left;
     width: 50%;
-}
+} */
 
-.header-left {
+/* .header-left {
     padding-top: 15px;
     padding-left: 20px;
-    /* width: 50%; */
-    /* float: left; */
+    width: 50%;
+    float: left;
 }
 
 .header-left p {
@@ -198,10 +200,10 @@ header {
 
 .header-right {
     padding-top: 25px;
-    /* width: 50%; */
-    /* float: left; */
+    width: 50%;
+    float: left;
     text-align: right;
-}
+} */
 
 i:hover {
     color: #FF5349;
@@ -224,19 +226,19 @@ i:hover {
     padding: 35px;
 } */
 
-main, footer {
+/* main, footer {
     float: right;
     width: 75%;
     padding: 35px;
-}
+} */
 
 .title h1 {
     margin: 0;
 }
 
 #intro {
-    overflow: auto;
-    padding-bottom: 35px;
+    overflow: hidden;
+    /* padding: 35px 0 35px 0; */
     border-bottom: 2px solid #000;
 }
 
@@ -244,34 +246,31 @@ main, footer {
     text-decoration-line: none;
 }
 
-.intro-left {
+/* .intro-left {
     float: left;
     width: 65%;
     vertical-align: top;
-}
+} */
 
-.intro-left > *{
+/* .intro-left > *{
     padding-bottom: 15px;
-}
+} */
 
-.intro-right {
+/* .intro-right {
     float: left;
     width: 35%;
-}
+} */
 
-.intro-right img {
+/* .intro-right img {
     width: 300px;
-}
+} */
 
-#uses {
+/* #uses {
     border-bottom: 2px solid #000;
 }
 
 .uses-item {
-    /* width: 460px; */ /*ESTA BUENA ESTA ALTERNATIVA, ANCHO DE 475PX TE QUEDA*/
-    display: inline-block;
     width: 45%;
-    /* box-sizing: content-box; */ /*APLIQUE BORDER BOX DE MANERA GLOBAL*/
     height: 170px;
     padding: 10px;
 }
@@ -291,9 +290,8 @@ main, footer {
 .uses-text {
     float: left;
     width: 70%;
-    /* padding-left: 10px; */ /*QUIZAS META DEMASIADO PADDING*/
     text-align: justify;
-}
+} */
 
 #features {
     padding-bottom: 18.72px;
@@ -467,4 +465,42 @@ footer {
 
 .footer-copyright {
     text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+
+    h2 {
+        font-size: 15px;
+        line-height: 10px;
+        font-weight: 400;
+    }
+
+    h3 {
+        font-size: 10px;
+    }
+
+    p {
+        font-size: 8px;
+    }
+
+    .header-right i {
+        font-size: 14px;
+    }
+
+    .intro-left {
+        text-align: center;
+    }
+
+    #uses h2 {
+        text-align: center;
+    }
+
+    .flex-container-uses { /*COMO PUEDO HACER ESTO SI NO ES CON MEDIA QUERY?*/
+        flex-direction: column;
+    }
 }

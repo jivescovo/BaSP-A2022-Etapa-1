@@ -1,0 +1,13 @@
+.flex-container-header {
+    display: flex;
+    overflow: hidden;
+    height: 75px; 
+    padding: 8px;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 2px solid #FF3E1D;
+}
+
+.header-left p {
+    margin: 0;
+}
