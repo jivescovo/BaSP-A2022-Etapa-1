@@ -1,0 +1,470 @@
+* {
+    box-sizing: border-box;
+}
+
+html,body {
+    margin: 0;
+}
+
+body {
+    background-color: #fff;
+    color: #373867;
+    font-family: 'Roboto';
+}
+
+/* aside {
+    float: left;
+    width: 25%;
+} */
+
+header, main, footer {
+    float: right;
+    width: 75%;
+}
+
+a {
+    padding-left: 5px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF5349;
+}
+
+h1 {
+    /* font-weight: 700; */
+    font-size: 40px;
+    line-height: 47px;
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+
+h2 {
+    /* font-weight: 700; */
+    font-size: 30px;
+    line-height: 35px;
+    text-decoration-line: underline;
+    text-decoration-color: #FF3E1D;
+    text-decoration-thickness: 2px; 
+}
+
+/* h2 {
+    text-decoration-line: underline;
+    text-decoration-color: #FF3E1D;
+    text-decoration-thickness: 2px;  
+} */
+
+span {
+    font-weight: bold;
+}
+
+aside {
+    float: left;
+    position: fixed;
+    width: 25%;
+    height: 900px;
+    background-color: #AACE9B;
+}
+
+button {
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 8px 4px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: #FF5349; 
+    border: 1px solid #FF5349;
+    border-radius: 4px;
+}
+
+/* .img-aside { VERIFICAR SI SE PUEDE BORRAR
+    width: 36px;
+    height: 36px;
+} */
+
+button:hover {
+    background-color: #FF5349;
+    color: white;
+}
+
+#submit {
+    background-color: #AACE9B;
+    /* color: #373867;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 8px 4px;
+    font-size: 12px; */
+}
+
+#reset {
+    background-color: #FF5349;
+    /* color: #373867;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 8px 4px;
+    font-size: 12px; */
+}
+
+#submit, #reset {
+    padding: 5px 10px;
+    margin: 8px 4px;
+    color: #373867;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+aside nav {
+    display: inline-block;
+    margin-left: 15px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #000;
+}
+
+aside ul {
+    width: 330px;
+    padding: 0;
+    list-style: none;
+}
+
+aside li:not(:last-child) {
+    border-bottom: 1px solid #000; 
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+aside a {
+    display: inline-block;
+    text-decoration: none;
+}
+/*CREO QUE PODRIA REEMPLAZAR TODOS LOS A HOVER POR EL PRIMER SELECTOR DE ARRIBA*/
+/* aside a:hover {
+    color: #FF5349;
+} */
+
+/* aside nav h3 {
+    padding-bottom: 30px;
+}
+
+aside div h3 {
+    padding-top: 25px;
+} */
+
+aside div {
+    padding: 15px;
+}
+
+aside div p {
+    padding-bottom: 20px;
+}
+
+aside div i {
+    padding-right: 8px;
+}
+
+header {
+    height: 75px;
+    padding: 15px;
+}
+
+.head {
+    overflow: hidden;
+    border-bottom: 2px solid #FF3E1D;
+}
+
+.header-left, .header-right {
+    float: left;
+    width: 50%;
+}
+
+.header-left {
+    padding-top: 15px;
+    padding-left: 20px;
+    /* width: 50%; */
+    /* float: left; */
+}
+
+.header-left p {
+    margin-bottom: 5px;
+}
+
+.header-right {
+    padding-top: 25px;
+    /* width: 50%; */
+    /* float: left; */
+    text-align: right;
+}
+
+i:hover {
+    color: #FF5349;
+}
+
+.fa-brands {
+    color: #5D5D5D;
+}
+
+/* main {
+    width: 75%; 
+    float: right;
+    padding: 35px;
+    max-width: 75%;
+} */
+
+/* footer {
+    width: 75%;
+    float: right;
+    padding: 35px;
+} */
+
+main, footer {
+    float: right;
+    width: 75%;
+    padding: 35px;
+}
+
+.title h1 {
+    margin: 0;
+}
+
+#intro {
+    overflow: auto;
+    padding-bottom: 35px;
+    border-bottom: 2px solid #000;
+}
+
+#intro h3 {
+    text-decoration-line: none;
+}
+
+.intro-left {
+    float: left;
+    width: 65%;
+    vertical-align: top;
+}
+
+.intro-left > *{
+    padding-bottom: 15px;
+}
+
+.intro-right {
+    float: left;
+    width: 35%;
+}
+
+.intro-right img {
+    width: 300px;
+}
+
+#uses {
+    border-bottom: 2px solid #000;
+}
+
+.uses-item {
+    /* width: 460px; */ /*ESTA BUENA ESTA ALTERNATIVA, ANCHO DE 475PX TE QUEDA*/
+    display: inline-block;
+    width: 45%;
+    /* box-sizing: content-box; */ /*APLIQUE BORDER BOX DE MANERA GLOBAL*/
+    height: 170px;
+    padding: 10px;
+}
+
+.uses-img {
+    float: left;
+    width: 30%;
+    padding-right: 10px;
+    padding-top: 15px;
+}
+
+.full-size {
+    height: 100%;
+    width: 100%;
+}
+
+.uses-text {
+    float: left;
+    width: 70%;
+    /* padding-left: 10px; */ /*QUIZAS META DEMASIADO PADDING*/
+    text-align: justify;
+}
+
+#features {
+    padding-bottom: 18.72px;
+    border-bottom: 2px solid #000;
+}
+
+.features-item {
+    /* width: 460px; */
+    display: inline-block;
+    width: 45%; /*FUNCIONA BIEN CON ESTE ANCHO TAMBIEN, 474 TE QUEDA*/
+    /* box-sizing: content-box; */
+    padding: 10px;
+    /* height: 360px; */
+    height: 45%; /*427PX Y ENTRA BIEN? WUT*/
+    /* vertical-align: top; */ /*PODRIA QUITARLO?*/
+    margin: 5px;
+}
+
+.features-img {
+    width: 30%;
+    /* padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px; */
+    padding: 15px 10px 10px 0;
+    margin: 0;
+}
+
+.full-size-features {
+    height: 180px;
+    width: 220px;
+}
+
+.features-text {
+    text-align: justify; /*ME CONVIENE AGRUPAR TODOS LOS TEXT ALIGN EN UN SOLO ELEMENTO?*/
+}
+
+#form {
+    overflow: auto;
+    padding-bottom: 18.72px;
+    border-bottom: 2px solid #000;
+}
+
+#form label {
+    display: inline;
+}
+
+.form-left, .form-right {
+    float: left;
+    width: 50%;
+}
+
+.form-left input {
+    width: 90%;
+    height: 30px;
+}
+
+/*RESULTAN REDUNDANTES CON RESPECTO A LO QUE DEFINO EN LA LINEA 359 MAS ABAJO*/
+/* #form .form-left { 
+    float: left;
+}
+
+#form .form-right {
+    float: right;
+} */
+
+/* .form-left {
+    width: 50%;
+    float: left;
+} */
+
+/* .form-right {
+    width: 50%;
+    float: left;
+    padding-top: 10px;
+} */
+
+.form-right {
+    padding-top: 10px;
+}
+
+/*CREO QUE NO HACE NADA YA QUE NO TENGO NINGUN SPAN*/
+/* .form-right span { 
+    padding: 10px;
+    display: block;
+} */
+
+.form-bott {
+    float: left;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.form-bott textarea {
+    width: 90%;
+}
+
+.form-footer {
+    width: 100%;
+    /* float: left; */ /*AL PEDO ME PARECE*/
+}
+
+.radio {
+    display: block;
+}
+
+#history {
+    border-bottom: 2px solid #000;
+}
+
+.par-1, .par-2, .omg-left, .img-right {
+    padding: 10px;
+}
+
+.par-1 {
+    display: inline-block;
+    /* width: 910px; */ /*QUEDA MEJOR QUE OCUPE TODO EL ANCHO OSEA SIN EL WIDTH*/
+    /* padding: 10px; */
+    text-align: justify;
+}
+
+.par-2 {
+    /* padding: 10px; */
+    text-align: justify;
+}
+
+.img-left {
+    float: left;
+    /* padding: 10px; */
+    width: 300px;
+}
+
+.img-right {
+    float: right;
+    width: 300px;
+    /* padding: 10px; */
+}
+
+/*ME CONVIENE AGRUPAR UNA PROPIEDAD DE VARIOS SELECTORES EN UN ELEMENTO?*/
+
+#various {
+    border-bottom: 2px solid #000;
+}
+
+.gen-links {
+    display: inline-block;
+    padding: 0;
+    width: 320px;
+    text-align: center;
+}
+
+.gen-links ol {
+    display: inline-block;
+    padding: 0;
+}
+
+.gen-links a {
+    text-decoration: none;
+    /* color: #373867; */ /*NO HACE FALTA YA QUE TODO TEXTO DEL BODY USA ESTE COLOR*/
+}
+
+footer {
+    height: 85px;
+    width: 75%;
+    padding: 15px;
+}
+
+.footer-socials {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.footer-copyright {
+    text-align: center;
+}
