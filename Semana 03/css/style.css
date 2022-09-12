@@ -13,11 +13,6 @@ body {
     display: flex;
 }
 
-/* aside {
-    float: left;
-    width: 25%;
-} */
-
 a {
     padding-left: 5px;
     text-decoration: none;
@@ -25,125 +20,6 @@ a {
 
 a:hover {
     color: #FF5349;
-}
-
-span {
-    font-weight: bold;
-}
-/*Desktop*/
-aside {
-    display: none;
-    float: left;
-    position: fixed;
-    width: 25%;
-    height: 900px;
-    background-color: #AACE9B;
-}
-/*Desktop, particularmente el tamanio del boton*/
-button {
-    border: none;
-    color: white;
-    padding: 10px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    font-weight: bold;
-    margin: 8px 4px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: white; 
-    color: #FF5349; 
-    border: 1px solid #FF5349;
-    border-radius: 4px;
-}
-
-/* .img-aside { VERIFICAR SI SE PUEDE BORRAR
-    width: 36px;
-    height: 36px;
-} */
-
-button:hover {
-    background-color: #FF5349;
-    color: white;
-}
-
-#submit {
-    background-color: #AACE9B;
-}
-
-#reset {
-    background-color: #FF5349;
-}
-
-#submit, #reset {
-    padding: 5px 10px;
-    margin: 8px 4px;
-    color: #373867;
-    border-radius: 4px;
-    font-size: 12px;
-}
-/*Desktop*/
-/* aside nav {
-    display: inline-block;
-    margin-left: 15px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #000;
-} */
-/*Desktop*/
-/* aside ul {
-    width: 330px;
-    padding: 0;
-    list-style: none;
-} */
-/*Desktop*/
-/* aside li:not(:last-child) {
-    border-bottom: 1px solid #000; 
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-} */
-/*Desktop*/
-/* aside a {
-    display: inline-block;
-    text-decoration: none;
-} */
-
-/*CREO QUE PODRIA REEMPLAZAR TODOS LOS A HOVER POR EL PRIMER SELECTOR DE ARRIBA*/
-/* aside a:hover {
-    color: #FF5349;
-} */
-
-/* aside nav h3 {
-    padding-bottom: 30px;
-}
-
-aside div h3 {
-    padding-top: 25px;
-} */
-
-/*Desktop*/
-/* aside div {
-    padding: 15px;
-} */
-/*Desktop*/
-/* aside div p {
-    padding-bottom: 20px;
-} */
-/*Desktop*/
-/* aside div i {
-    padding-right: 8px;
-} */
-
-i:hover {
-    color: #FF5349;
-}
-
-.fa-brands {
-    color: #5D5D5D;
-}
-
-.title h1 {
-    margin: 0;
 }
 
 h1 {
@@ -169,60 +45,71 @@ p, span{
     font-size: 8px;
 }
 
-.header-right i, .footer-socials i {
-    font-size: 14px;
+span {
+    font-weight: bold;
 }
 
-.intro-left {
+aside {
+    /* display: none; */
+    /* float: left; */
+    position: fixed;
+    width: 25%;
+    /* height: 900px;
+    background-color: #AACE9B; */
+}
+/*Desktop, particularmente el tamanio del boton*/
+/* button {
+    border: none;
+    color: white;
+    padding: 10px 30px;
     text-align: center;
-}
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 8px 4px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: #FF5349; 
+    border: 1px solid #FF5349;
+    border-radius: 4px;
+} */
 
-#uses h2 {
+/*Mobile version of button*/
+button {
+    border: none;
+    color: white;
+    padding: 5px 15px;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: #FF5349; 
+    border: 1px solid #FF5349;
+    border-radius: 2px;
+} 
+
+button:hover {
+    background-color: #FF5349;
+    color: white;
 }
 
-.flex-container-uses { 
-    flex-direction: column;
+i:hover {
+    color: #FF5349;
 }
 
-#features h2 {
-    text-align: center;
-}
-
-.flex-container-features {
-    flex-direction: column;
-}
-
-#form h2 {
-    text-align: center;
-}
-
-.flex-container-form-top {
-    flex-direction: column;
-}
-
-.form-left, .form-left input {
-    width: 100%;
-}
-
-.flex-container-form-footer {
-    justify-content: center;
-}
-
-#history h2 {
-    text-align: center;
-}
-
-.footer-socials i {
-    font-size: 14px;
+.fa-brands {
+    color: #5D5D5D;
 }
 
 @media screen and (min-width: 768px){
-    .header-right i, .footer-socials i {
-        font-size: 20px;
-    }
     h1 {
-        font-weight: 700;
         font-size: 30px;
         line-height: 47px;
     }
@@ -230,32 +117,23 @@ p, span{
         font-weight: 700;
     }
     h2 {
-        font-weight: 700;
         font-size: 20px;
         line-height: 35px;
+    }
+    button {
+        padding: 10px 30px;
+        font-size: 12px;
+        margin: 8px 4px;
+        border-radius: 4px;
     }
     .intro-left {
         text-align: left;
     }
+    .intro-button {
+        justify-content: left;
+    }
     p, span {
         font-size: 16px;
-    }
-    .flex-container-intro, 
-    .flex-container-uses, 
-    .flex-container-features, 
-    .flex-container-form-top, 
-    .flex-container-history-par2-a,
-    .flex-container-various {
-        flex-direction: row;
-    }
-    #uses h2,
-    #features h2,
-    #form h2,
-    #history h2 {
-        text-align: left;
-    }
-    .flex-container-history-par2-b {
-        flex-direction: row-reverse;
     }
 }
 
@@ -264,63 +142,18 @@ p, span{
         flex: 25%;
     }
     .right-side {
-        flex: 1 1 75%;
+        flex: 75%;
     }
-    .header-right i, .footer-socials i {
-        font-size: 32px;
-    }
-    /*Desktop*/
     h1 {
-        font-weight: 700;
         font-size: 40px;
         line-height: 47px;
     }
-    /*Desktop*/
     h1, h2 {
         font-weight: 700;
     }
-    /*Desktop*/
     h2 {
-        font-weight: 700;
         font-size: 30px;
         line-height: 35px;
     }
-    aside {
-        display: flex;
-    }
-    /* aside {
-        display: flex;
-        flex-direction: column;
-        height: 900px;
-        background-color: #AACE9B;
-    }
-    aside nav {
-        padding-bottom: 30px;
-        border-bottom: 1px solid #000;
-    }
-    aside ul {
-        padding: 0;
-        list-style: none;
-    }
-
-    .flex-container-navlinks ul{
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-    }
-    aside li:not(:last-child) {
-        border-bottom: 1px solid #000; 
-        margin-bottom: 10px;
-        padding-bottom: 10px;
-    }
-    aside a {
-        text-decoration: none;
-    }
-    aside div {
-        padding: 15px;
-    }
-    aside div p {
-        padding-bottom: 20px;
-    } */
 }
 

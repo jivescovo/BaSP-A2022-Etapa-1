@@ -1,6 +1,6 @@
 .flex-container-footer {
     display: flex;
-    height: 75px; 
+    height: 70px; 
     padding: 8px;
     flex-direction: column;
     justify-content: space-between;
@@ -10,3 +10,20 @@
 .footer span {
     margin: 0;
 }
+
+.footer-socials i {
+    font-size: 14px;
+}
+
+@media screen and (min-width: 768px){
+    .footer-socials i {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .footer-socials i {
+        font-size: 32px;
+    }
+}
+

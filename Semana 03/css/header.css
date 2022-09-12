@@ -1,7 +1,7 @@
 .flex-container-header {
     display: flex;
-    overflow: hidden;
-    height: 75px; 
+    /* overflow: hidden; */
+    height: 70px; 
     padding: 8px;
     justify-content: space-between;
     align-items: flex-end;
@@ -10,4 +10,20 @@
 
 .header-left p {
     margin: 0;
+}
+
+.header-right i {
+    font-size: 14px;
+}
+
+@media screen and (min-width: 768px){
+    .header-right i {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .header-right i {
+        font-size: 32px;
+    }
 }

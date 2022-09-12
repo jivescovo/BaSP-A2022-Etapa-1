@@ -30,11 +30,9 @@
     padding-bottom: 15px;
 }
 
-/* VER COMO CENTRAR EL BOTON EN VISTA MOBILE */
-
 .intro-button { 
     display: flex;
-    justify-content: left;
+    justify-content: center;
     padding-left: 8px;
     padding-bottom: 35px;
 }
@@ -45,7 +43,7 @@
     justify-content: space-around;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 35px 8px 35px 8px;
+    padding: 0px 8px 12.450px 8px;
 }
 
 #uses {
@@ -79,7 +77,7 @@
     flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
-    /* padding: 35px 8px 35px 8px; */
+    padding: 0px 8px 12.450px 8px;
 }
 
 #features {
@@ -91,14 +89,19 @@
 .features-item {
     display: flex;
     flex-direction: column;
+    /* justify-content: space-around; */
     align-items: center;
     flex: 1 1 45%;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
 
 .features-img {
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
+
+/* .features-button {
+    display: flex;
+} */
 
 .full-size-features {
     max-width: 100%;
@@ -106,7 +109,7 @@
 
 .features-text {
     text-align: justify; /*ME CONVIENE AGRUPAR TODOS LOS TEXT ALIGN EN UN SOLO ELEMENTO?*/
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
 
 #form {
@@ -115,8 +118,8 @@
 }
 
 .flex-container-form {
-    padding: 35px 0 35px 0;
-    margin: 0px 35px 0 35px;
+    padding: 0px 35px 12.450px 35px;
+    /* margin: 0px 35px 0 35px; */
 }
 
 .flex-container-form-top {
@@ -138,6 +141,7 @@
     width: 30%;
 }
 
+
 .form-left input {
     width: 90%;
     height: 30px;
@@ -155,7 +159,8 @@
 }
 
 .radio {
-    display: block;
+    display: flex;
+    padding: 3px 0 3px 0;
 }
 
 #history {
@@ -169,6 +174,7 @@
     align-items: center;
     justify-content: center;
     text-align: justify;
+    padding: 0 8px 12.450px 8px;
 }
 
 .flex-container-history-par1 {
@@ -205,4 +211,88 @@
 
 .gen-links {
     text-align: center;
+}
+
+
+#submit {
+    background-color: #AACE9B;
+}
+
+#reset {
+    background-color: #FF5349;
+}
+
+#submit, #reset {
+    padding: 5px 10px;
+    margin: 8px 4px;
+    color: #373867;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.title h1 {
+    margin: 0;
+}
+
+.intro-left {
+    text-align: center;
+}
+
+#uses h2 {
+    text-align: center;
+}
+
+.flex-container-uses { 
+    flex-direction: column;
+}
+
+#features h2 {
+    text-align: center;
+}
+
+.flex-container-features {
+    flex-direction: column;
+}
+
+#form h2 {
+    text-align: center;
+}
+
+.flex-container-form-top {
+    flex-direction: column;
+}
+
+.form-left, .form-left input {
+    width: 100%;
+}
+
+.flex-container-form-footer {
+    justify-content: center;
+}
+
+#history h2 {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px){
+    .flex-container-intro, 
+    .flex-container-uses, 
+    .flex-container-features, 
+    .flex-container-form-top, 
+    .flex-container-history-par2-a,
+    .flex-container-various {
+        flex-direction: row;
+    }
+    #uses h2,
+    #features h2,
+    #form h2,
+    #history h2 {
+        text-align: left;
+    }
+    .flex-container-form-footer {
+        justify-content: left;
+    }
+    .flex-container-history-par2-b {
+        flex-direction: row-reverse;
+    }
 }
