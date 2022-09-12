@@ -1,10 +1,11 @@
 # Trackgenix
 
 ## Week 00
-    Description: 2 people work teams developed the assigned views. In my case, this view was for an Employee PM role.
-    In order to do so, we had to make use of overlays, components, variants and interactions.
-    The other teams had other roles and views to develop. 
-    One of said views was the landing desktop, which is the basis for the work of the following week.
+
+Description: 2 people work teams developed the assigned views. In my case, this view was for an Employee PM role.
+In order to do so, we had to make use of overlays, components, variants and interactions.
+The other teams had other roles and views to develop. 
+One of said views was the landing desktop, which is the basis for the work of the following week.
 
 ## Week 01
     Description: Using as strarting point the Landing Desktop view developed in Figma during Week 00,
