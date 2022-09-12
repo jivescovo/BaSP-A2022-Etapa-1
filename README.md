@@ -23,9 +23,15 @@
 
     The objective of this week is to develop the HTML by itself in order to implement CSS on it the following week.
 
-    How to access:
-       1 - Access folder "Semana 01"
-       2 - Open file "index.html" on your browser (make sure to download the assets folder)
+    How to access:  https://jivescovo.github.io/BaSP-A2022-Etapa-1/Semana%2001/index.html
+
+        Github Pages Link: 
+
+        Alternative:
+
+        1 - Clone "BaSP-A2022-Etapa-1" repository to your local machine
+        2 - Access folder "Semana 01"
+        3 - Open file "index.html" on your browser
 
 ## Week 02
     Description: From the HTML of the week prior, I began fixing the mistakes or adding the missing features detailed
@@ -40,6 +46,8 @@
     How to access:  https://jivescovo.github.io/BaSP-A2022-Etapa-1/Semana%2002/index.html
 
         Github Pages Link: 
+
+        Alternative:
 
         1 - Clone "BaSP-A2022-Etapa-1" repository to your local machine
         2 - Access folder "Semana 02"
@@ -61,11 +69,13 @@
 
         Github Pages Link: https://jivescovo.github.io/BaSP-A2022-Etapa-1/Semana%2003/index.html
 
+        Alternative:
+
         1 - Clone "BaSP-A2022-Etapa-1" repository to your local machine
         2 - Access folder "Semana 03"
         3 - Open file "index.html" on your browser
 
-    As before, make sure to download the assets folder but this time, all the css (header, footer, sidebar, main and style)
+    As before, make sure to download the assets folder but this time, all the css files (header, footer, sidebar, main and style)
     and webfonts folders should be downloaded. If this isn't done, neither styles nor icons will be visible.
 
 ### _By Juan Ignacio Vescovo_
