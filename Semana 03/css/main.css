@@ -1,6 +1,9 @@
 #intro {
-    overflow: hidden;
     border-bottom: 2px solid #000;
+}
+
+.title h1 {
+    margin: 0;
 }
 
 #intro h3 {
@@ -13,7 +16,14 @@
     padding: 35px 8px 35px 8px;
     justify-content: space-between;
     align-items: center;
-    /* flex-wrap: wrap; */
+}
+
+.intro-left {
+    text-align: center;
+}
+
+.intro-left > *{
+    padding-bottom: 15px;
 }
 
 .intro-right {
@@ -26,15 +36,20 @@
     max-width: 100%;
 }
 
-.intro-left > *{
-    padding-bottom: 15px;
-}
-
 .intro-button { 
     display: flex;
     justify-content: center;
     padding-left: 8px;
     padding-bottom: 35px;
+}
+
+#uses {
+    padding: 0px 8px 0px 8px;
+    border-bottom: 2px solid #000;
+}
+
+#uses h2 {
+    text-align: center;
 }
 
 .flex-container-uses {
@@ -44,11 +59,6 @@
     flex-direction: column;
     flex-wrap: wrap;
     padding: 0px 8px 12.450px 8px;
-}
-
-#uses {
-    padding: 0px 8px 0px 8px;
-    border-bottom: 2px solid #000;
 }
 
 .uses-item { 
@@ -71,6 +81,16 @@
     text-align: justify;
 }
 
+#features {
+    /* padding-bottom: 18.72px; */
+    padding: 0px 8px 0px 8px;
+    border-bottom: 2px solid #000;
+}
+
+#features h2 {
+    text-align: center;
+}
+
 .flex-container-features {
     display: flex;
     align-items: center;
@@ -78,12 +98,6 @@
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 0px 8px 12.450px 8px;
-}
-
-#features {
-    /* padding-bottom: 18.72px; */
-    padding: 0px 8px 0px 8px;
-    border-bottom: 2px solid #000;
 }
 
 .features-item {
@@ -95,21 +109,12 @@
     /* border: 1px solid #000; */
 }
 
-.features-img {
-    /* border: 1px solid #000; */
-}
-
-/* .features-button {
-    display: flex;
-} */
-
 .full-size-features {
     max-width: 100%;
 }
 
 .features-text {
     text-align: justify; /*ME CONVIENE AGRUPAR TODOS LOS TEXT ALIGN EN UN SOLO ELEMENTO?*/
-    /* border: 1px solid #000; */
 }
 
 #form {
@@ -117,9 +122,12 @@
     padding: 0px 8px 0px 8px;
 }
 
+#form h2 {
+    text-align: center;
+}
+
 .flex-container-form {
     padding: 0px 35px 12.450px 35px;
-    /* margin: 0px 35px 0 35px; */
 }
 
 .flex-container-form-top {
@@ -132,7 +140,12 @@
 .form-left {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 100%;
+}
+
+.form-left input {
+    width: 100%;
+    height: 30px;
 }
 
 .form-right {
@@ -141,10 +154,9 @@
     width: 30%;
 }
 
-
-.form-left input {
-    width: 90%;
-    height: 30px;
+.radio {
+    display: flex;
+    padding: 3px 0 3px 0;
 }
 
 .flex-container-form-bott {
@@ -156,16 +168,32 @@
 .flex-container-form-footer {
     display: flex;
     width: 100%;
+    justify-content: center;
 }
 
-.radio {
-    display: flex;
-    padding: 3px 0 3px 0;
+#submit {
+    background-color: #AACE9B;
+}
+
+#reset {
+    background-color: #FF5349;
+}
+
+#submit, #reset {
+    padding: 5px 10px;
+    margin: 8px 4px;
+    color: #373867;
+    border-radius: 4px;
+    font-size: 12px;
 }
 
 #history {
     padding: 0px 8px 0px 8px;
     border-bottom: 2px solid #000;
+}
+
+#history h2 {
+    text-align: center;
 }
 
 .flex-container-history {
@@ -213,67 +241,6 @@
     text-align: center;
 }
 
-
-#submit {
-    background-color: #AACE9B;
-}
-
-#reset {
-    background-color: #FF5349;
-}
-
-#submit, #reset {
-    padding: 5px 10px;
-    margin: 8px 4px;
-    color: #373867;
-    border-radius: 4px;
-    font-size: 12px;
-}
-
-.title h1 {
-    margin: 0;
-}
-
-.intro-left {
-    text-align: center;
-}
-
-#uses h2 {
-    text-align: center;
-}
-
-.flex-container-uses { 
-    flex-direction: column;
-}
-
-#features h2 {
-    text-align: center;
-}
-
-.flex-container-features {
-    flex-direction: column;
-}
-
-#form h2 {
-    text-align: center;
-}
-
-.flex-container-form-top {
-    flex-direction: column;
-}
-
-.form-left, .form-left input {
-    width: 100%;
-}
-
-.flex-container-form-footer {
-    justify-content: center;
-}
-
-#history h2 {
-    text-align: center;
-}
-
 @media screen and (min-width: 768px){
     .flex-container-intro, 
     .flex-container-uses, 
@@ -288,6 +255,12 @@
     #form h2,
     #history h2 {
         text-align: left;
+    }
+    .form-left {
+        width: 60%;
+    }
+    .form-left input {
+        width: 90%;
     }
     .flex-container-form-footer {
         justify-content: left;

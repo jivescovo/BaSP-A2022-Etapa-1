@@ -1,6 +1,5 @@
 .flex-container-header {
     display: flex;
-    /* overflow: hidden; */
     height: 70px; 
     padding: 8px;
     justify-content: space-between;

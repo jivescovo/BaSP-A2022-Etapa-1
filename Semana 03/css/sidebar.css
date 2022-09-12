@@ -4,13 +4,12 @@ aside {
     height: 900px;
     background-color: #AACE9B;
 }
-/*Desktop*/
+
 aside nav {
     padding-bottom: 30px;
     border-bottom: 1px solid #000;
-    /* border: 1px solid #000; */
 }
-/*Desktop*/
+
 aside ul {
     padding: 0;
     list-style: none;
@@ -20,24 +19,23 @@ aside ul {
     display: flex;
     flex-direction: column;
 }
-/*Desktop*/
+
 aside li:not(:last-child) {
     border-bottom: 1px solid #000; 
     margin-bottom: 10px;
     padding-bottom: 10px;
 }
-/*Desktop*/
-aside a {
-    text-decoration: none;
-}
-/*Desktop*/
+
 aside div {
     padding: 15px;
 }
 
-/*Desktop*/
 aside div p {
     padding-bottom: 20px;
+}
+
+aside a {
+    text-decoration: none;
 }
 
 @media screen and (min-width: 1024px) {

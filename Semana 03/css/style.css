@@ -54,8 +54,6 @@ aside {
     /* float: left; */
     position: fixed;
     width: 25%;
-    /* height: 900px;
-    background-color: #AACE9B; */
 }
 /*Desktop, particularmente el tamanio del boton*/
 /* button {
@@ -120,20 +118,21 @@ i:hover {
         font-size: 20px;
         line-height: 35px;
     }
+    p, span {
+        font-size: 16px;
+    }
     button {
         padding: 10px 30px;
         font-size: 12px;
         margin: 8px 4px;
         border-radius: 4px;
     }
+    /*PODRIA LLEVARLAS AL MAIN*/
     .intro-left {
         text-align: left;
     }
     .intro-button {
         justify-content: left;
-    }
-    p, span {
-        font-size: 16px;
     }
 }
 

@@ -7,12 +7,12 @@
     align-items: center;
 }
 
-.footer span {
-    margin: 0;
-}
-
 .footer-socials i {
     font-size: 14px;
+}
+
+.footer span {
+    margin: 0;
 }
 
 @media screen and (min-width: 768px){
