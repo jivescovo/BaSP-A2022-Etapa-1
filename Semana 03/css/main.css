@@ -49,6 +49,7 @@
 }
 
 #uses {
+    padding: 0px 8px 0px 8px;
     border-bottom: 2px solid #000;
 }
 
@@ -78,11 +79,12 @@
     flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 35px 8px 35px 8px;
+    /* padding: 35px 8px 35px 8px; */
 }
 
 #features {
-    padding-bottom: 18.72px;
+    /* padding-bottom: 18.72px; */
+    padding: 0px 8px 0px 8px;
     border-bottom: 2px solid #000;
 }
 
@@ -109,6 +111,7 @@
 
 #form {
     border-bottom: 2px solid #000;
+    padding: 0px 8px 0px 8px;
 }
 
 .flex-container-form {
@@ -156,7 +159,7 @@
 }
 
 #history {
-    padding: 35px 8px 35px 8px;
+    padding: 0px 8px 0px 8px;
     border-bottom: 2px solid #000;
 }
 

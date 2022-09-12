@@ -10,6 +10,7 @@ body {
     background-color: #fff;
     color: #373867;
     font-family: 'Roboto';
+    display: flex;
 }
 
 /* aside {
@@ -259,6 +260,12 @@ p, span{
 }
 
 @media screen and (min-width: 1024px) {
+    .left-side {
+        flex: 25%;
+    }
+    .right-side {
+        flex: 1 1 75%;
+    }
     .header-right i, .footer-socials i {
         font-size: 32px;
     }
@@ -279,25 +286,34 @@ p, span{
         line-height: 35px;
     }
     aside {
-        display: none;
-        float: left;
-        position: fixed;
-        width: 25%;
+        display: flex;
+        flex-direction: column;
+        /* float: left;
+        position: fixed; */
+        /* width: 25%; */
         height: 900px;
         background-color: #AACE9B;
     }
     /*Desktop*/
     aside nav {
-        display: inline-block;
-        margin-left: 15px;
+        /* display: inline-block; */
+        /* margin-left: 15px; */
         padding-bottom: 30px;
         border-bottom: 1px solid #000;
+        /* border: 1px solid #000; */
     }
     /*Desktop*/
     aside ul {
-        width: 330px;
+        /* width: 330px; */
         padding: 0;
         list-style: none;
+    }
+
+    .flex-container-navlinks ul{
+        /* padding: 0;
+        list-style: none; */
+        display: flex;
+        flex-direction: column;
     }
     /*Desktop*/
     aside li:not(:last-child) {
@@ -307,20 +323,23 @@ p, span{
     }
     /*Desktop*/
     aside a {
-        display: inline-block;
+        /* display: inline-block; */
         text-decoration: none;
     }
     /*Desktop*/
     aside div {
         padding: 15px;
     }
+    /* #test {
+        border: 1px solid #000;
+    } */
     /*Desktop*/
     aside div p {
         padding-bottom: 20px;
     }
     /*Desktop*/
     aside div i {
-        padding-right: 8px;
+        /* padding-right: 8px; */
     }
 }
 
