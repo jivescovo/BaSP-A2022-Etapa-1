@@ -23,7 +23,7 @@
 
     The objective of this week is to develop the HTML by itself in order to implement CSS on it the following week.
 
-    How to access:  https://jivescovo.github.io/BaSP-A2022-Etapa-1/Semana%2001/index.html
+    How to access: [Problmetica Semana 01] (https://jivescovo.github.io/BaSP-A2022-Etapa-1/Semana%2001/index.html)
 
         Github Pages Link: 
 
