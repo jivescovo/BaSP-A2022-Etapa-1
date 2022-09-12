@@ -1,6 +1,5 @@
 .flex-container-footer {
     display: flex;
-    /* overflow: hidden; */
     height: 75px; 
     padding: 8px;
     flex-direction: column;

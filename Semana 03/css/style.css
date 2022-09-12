@@ -17,11 +17,6 @@ body {
     width: 25%;
 } */
 
-/* header, main, footer {
-    float: right;
-    width: 75%;
-} */
-
 a {
     padding-left: 5px;
     text-decoration: none;
@@ -31,35 +26,10 @@ a:hover {
     color: #FF5349;
 }
 
-h1 {
-    /* font-weight: 700; */
-    font-size: 40px;
-    line-height: 47px;
-}
-
-h1, h2 {
-    font-weight: 700;
-}
-
-h2 {
-    /* font-weight: 700; */
-    font-size: 30px;
-    line-height: 35px;
-    text-decoration-line: underline;
-    text-decoration-color: #FF3E1D;
-    text-decoration-thickness: 2px; 
-}
-
-/* h2 {
-    text-decoration-line: underline;
-    text-decoration-color: #FF3E1D;
-    text-decoration-thickness: 2px;  
-} */
-
 span {
     font-weight: bold;
 }
-
+/*Desktop*/
 aside {
     display: none;
     float: left;
@@ -68,7 +38,7 @@ aside {
     height: 900px;
     background-color: #AACE9B;
 }
-
+/*Desktop, particularmente el tamanio del boton*/
 button {
     border: none;
     color: white;
@@ -99,20 +69,10 @@ button:hover {
 
 #submit {
     background-color: #AACE9B;
-    /* color: #373867;
-    border-radius: 4px;
-    padding: 5px 10px;
-    margin: 8px 4px;
-    font-size: 12px; */
 }
 
 #reset {
     background-color: #FF5349;
-    /* color: #373867;
-    border-radius: 4px;
-    padding: 5px 10px;
-    margin: 8px 4px;
-    font-size: 12px; */
 }
 
 #submit, #reset {
@@ -122,30 +82,30 @@ button:hover {
     border-radius: 4px;
     font-size: 12px;
 }
-
-aside nav {
+/*Desktop*/
+/* aside nav {
     display: inline-block;
     margin-left: 15px;
     padding-bottom: 30px;
     border-bottom: 1px solid #000;
-}
-
-aside ul {
+} */
+/*Desktop*/
+/* aside ul {
     width: 330px;
     padding: 0;
     list-style: none;
-}
-
-aside li:not(:last-child) {
+} */
+/*Desktop*/
+/* aside li:not(:last-child) {
     border-bottom: 1px solid #000; 
     margin-bottom: 10px;
     padding-bottom: 10px;
-}
-
-aside a {
+} */
+/*Desktop*/
+/* aside a {
     display: inline-block;
     text-decoration: none;
-}
+} */
 
 /*CREO QUE PODRIA REEMPLAZAR TODOS LOS A HOVER POR EL PRIMER SELECTOR DE ARRIBA*/
 /* aside a:hover {
@@ -160,49 +120,17 @@ aside div h3 {
     padding-top: 25px;
 } */
 
-aside div {
+/*Desktop*/
+/* aside div {
     padding: 15px;
-}
-
-aside div p {
+} */
+/*Desktop*/
+/* aside div p {
     padding-bottom: 20px;
-}
-
-aside div i {
+} */
+/*Desktop*/
+/* aside div i {
     padding-right: 8px;
-}
-
-/* header {
-    height: 75px;
-    padding: 15px;
-} */
-
-/* .head {
-    overflow: hidden;
-    border-bottom: 2px solid #FF3E1D;
-} */
-
-/* .header-left, .header-right {
-    float: left;
-    width: 50%;
-} */
-
-/* .header-left {
-    padding-top: 15px;
-    padding-left: 20px;
-    width: 50%;
-    float: left;
-}
-
-.header-left p {
-    margin-bottom: 5px;
-}
-
-.header-right {
-    padding-top: 25px;
-    width: 50%;
-    float: left;
-    text-align: right;
 } */
 
 i:hover {
@@ -213,311 +141,186 @@ i:hover {
     color: #5D5D5D;
 }
 
-/* main {
-    width: 75%; 
-    float: right;
-    padding: 35px;
-    max-width: 75%;
-} */
-
-/* footer {
-    width: 75%;
-    float: right;
-    padding: 35px;
-} */
-
-/* main, footer {
-    float: right;
-    width: 75%;
-    padding: 35px;
-} */
-
 .title h1 {
     margin: 0;
 }
 
-#intro {
-    overflow: hidden;
-    /* padding: 35px 0 35px 0; */
-    border-bottom: 2px solid #000;
+h1 {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
 }
 
-#intro h3 {
-    text-decoration-line: none;
+h2 {
+    font-size: 15px;
+    line-height: 10px;
+    font-weight: 400;
+    text-decoration-line: underline;
+    text-decoration-color: #FF3E1D;
+    text-decoration-thickness: 2px; 
 }
 
-/* .intro-left {
-    float: left;
-    width: 65%;
-    vertical-align: top;
-} */
-
-/* .intro-left > *{
-    padding-bottom: 15px;
-} */
-
-/* .intro-right {
-    float: left;
-    width: 35%;
-} */
-
-/* .intro-right img {
-    width: 300px;
-} */
-
-/* #uses {
-    border-bottom: 2px solid #000;
+h3 {
+    font-size: 10px;
 }
 
-.uses-item {
-    width: 45%;
-    height: 170px;
-    padding: 10px;
+p, span{
+    font-size: 8px;
 }
 
-.uses-img {
-    float: left;
-    width: 30%;
-    padding-right: 10px;
-    padding-top: 15px;
+.header-right i, .footer-socials i {
+    font-size: 14px;
 }
 
-.full-size {
-    height: 100%;
-    width: 100%;
-}
-
-.uses-text {
-    float: left;
-    width: 70%;
-    text-align: justify;
-} */
-
-/* #features {
-    padding-bottom: 18.72px;
-    border-bottom: 2px solid #000;
-}
-
-.features-item {
-    width: 45%; 
-    padding: 10px;
-    height: 45%; 
-    margin: 5px;
-}
-
-.features-img {
-    width: 30%;
-    padding: 15px 10px 10px 0;
-    margin: 0;
-}
-
-.full-size-features {
-    height: 180px;
-    width: 220px;
-}
-
-.features-text {
-    text-align: justify; 
-} */
-
-/* #form {
-    overflow: auto;
-    padding-bottom: 18.72px;
-    border-bottom: 2px solid #000;
-}
-
-#form label {
-    display: inline;
-}
-
-.form-left, .form-right {
-    float: left;
-    width: 50%;
-}
-
-.form-left input {
-    width: 90%;
-    height: 30px;
-} */
-
-/*RESULTAN REDUNDANTES CON RESPECTO A LO QUE DEFINO EN LA LINEA 359 MAS ABAJO*/
-/* #form .form-left { 
-    float: left;
-}
-
-#form .form-right {
-    float: right;
-} */
-
-/* .form-left {
-    width: 50%;
-    float: left;
-} */
-
-/* .form-right {
-    width: 50%;
-    float: left;
-    padding-top: 10px;
-} */
-
-/* .form-right {
-    padding-top: 10px;
-} */
-
-/*CREO QUE NO HACE NADA YA QUE NO TENGO NINGUN SPAN*/
-/* .form-right span { 
-    padding: 10px;
-    display: block;
-} */
-
-/* .form-bott {
-    float: left;
-    width: 100%;
-    padding-bottom: 10px;
-}
-
-.form-bott textarea {
-    width: 90%;
-}
-
-.form-footer {
-    width: 100%;
-}
-
-.radio {
-    display: block;
-} */
-
-/* #history {
-    border-bottom: 2px solid #000;
-}
-
-.par-1, .par-2, .omg-left, .img-right {
-    padding: 10px;
-}
-
-.par-1 {
-    display: inline-block;
-    text-align: justify;
-}
-
-.par-2 {
-    text-align: justify;
-}
-
-.img-left {
-    float: left;
-    width: 300px;
-}
-
-.img-right {
-    float: right;
-    width: 300px;
-} */
-
-/*ME CONVIENE AGRUPAR UNA PROPIEDAD DE VARIOS SELECTORES EN UN ELEMENTO?*/
-
-/* #various {
-    border-bottom: 2px solid #000;
-}
-
-.gen-links {
-    display: inline-block;
-    padding: 0;
-    width: 320px;
+.intro-left {
     text-align: center;
 }
 
-.gen-links ol {
-    display: inline-block;
-    padding: 0;
-}
-
-.gen-links a {
-    text-decoration: none;
-} */
-
-/* footer {
-    height: 85px;
-    width: 75%;
-    padding: 15px;
-}
-
-.footer-socials {
+#uses h2 {
     text-align: center;
-    padding-bottom: 10px;
 }
 
-.footer-copyright {
-    text-align: center;
-} */
+.flex-container-uses { 
+    flex-direction: column;
+}
 
-@media screen and (max-width: 480px) {
-    h1 {
+#features h2 {
+    text-align: center;
+}
+
+.flex-container-features {
+    flex-direction: column;
+}
+
+#form h2 {
+    text-align: center;
+}
+
+.flex-container-form-top {
+    flex-direction: column;
+}
+
+.form-left, .form-left input {
+    width: 100%;
+}
+
+.flex-container-form-footer {
+    justify-content: center;
+}
+
+#history h2 {
+    text-align: center;
+}
+
+.footer-socials i {
+    font-size: 14px;
+}
+
+@media screen and (min-width: 768px){
+    .header-right i, .footer-socials i {
         font-size: 20px;
-        line-height: 20px;
-        font-weight: 400;
     }
-
+    h1 {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 47px;
+    }
+    h1, h2 {
+        font-weight: 700;
+    }
     h2 {
-        font-size: 15px;
-        line-height: 10px;
-        font-weight: 400;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 35px;
     }
-
-    h3 {
-        font-size: 10px;
-    }
-
-    p, span{
-        font-size: 8px;
-    }
-
-    .header-right i {
-        font-size: 14px;
-    }
-
     .intro-left {
-        text-align: center;
+        text-align: left;
     }
-
-    #uses h2 {
-        text-align: center;
+    p, span {
+        font-size: 16px;
     }
-
-    .flex-container-uses { /*COMO PUEDO HACER ESTO SI NO ES CON MEDIA QUERY?*/
-        flex-direction: column;
+    .flex-container-intro, 
+    .flex-container-uses, 
+    .flex-container-features, 
+    .flex-container-form-top, 
+    .flex-container-history-par2-a,
+    .flex-container-various {
+        flex-direction: row;
     }
-
-    #features h2 {
-        text-align: center;
-    }
-
-    .flex-container-features { /*COMO PUEDO HACER ESTO SI NO ES CON MEDIA QUERY?*/
-        flex-direction: column;
-    }
-
-    #form h2 {
-        text-align: center;
-    }
-
-    .flex-container-form-top {
-        flex-direction: column;
-    }
-
-    .form-left, .form-left input { /*PUEDO USAR MEDIA QUERY PARA ESTO?*/
-        width: 100%;
-    }
-
-    .flex-container-form-footer {
-        justify-content: center;
-    }
-
+    #uses h2,
+    #features h2,
+    #form h2,
     #history h2 {
-        text-align: center;
+        text-align: left;
     }
-
-    .footer-socials i {
-        font-size: 14px;
+    .flex-container-history-par2-b {
+        flex-direction: row-reverse;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .header-right i, .footer-socials i {
+        font-size: 32px;
+    }
+    /*Desktop*/
+    h1 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 47px;
+    }
+    /*Desktop*/
+    h1, h2 {
+        font-weight: 700;
+    }
+    /*Desktop*/
+    h2 {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35px;
+    }
+    aside {
+        display: none;
+        float: left;
+        position: fixed;
+        width: 25%;
+        height: 900px;
+        background-color: #AACE9B;
+    }
+    /*Desktop*/
+    aside nav {
+        display: inline-block;
+        margin-left: 15px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #000;
+    }
+    /*Desktop*/
+    aside ul {
+        width: 330px;
+        padding: 0;
+        list-style: none;
+    }
+    /*Desktop*/
+    aside li:not(:last-child) {
+        border-bottom: 1px solid #000; 
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+    /*Desktop*/
+    aside a {
+        display: inline-block;
+        text-decoration: none;
+    }
+    /*Desktop*/
+    aside div {
+        padding: 15px;
+    }
+    /*Desktop*/
+    aside div p {
+        padding-bottom: 20px;
+    }
+    /*Desktop*/
+    aside div i {
+        padding-right: 8px;
+    }
+}
+

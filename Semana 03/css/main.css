@@ -1,15 +1,25 @@
+#intro {
+    overflow: hidden;
+    border-bottom: 2px solid #000;
+}
+
+#intro h3 {
+    text-decoration-line: none;
+}
+
 .flex-container-intro {
     display: flex;
+    flex-direction: column;
     padding: 35px 8px 35px 8px;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .intro-right {
     display: flex;
     justify-content: center;
-    flex: 1 1 300px;
+    flex: 1 1 45%;
 }
 
 .intro-right img{
@@ -33,6 +43,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-direction: column;
     flex-wrap: wrap;
     padding: 35px 8px 35px 8px;
 }
@@ -43,19 +54,13 @@
 
 .uses-item { 
     display: flex;
-    width: 45%;
+    flex: 1 1 45%;
     align-items: center;
-    /* height: 170px; */
-    /* padding: 10px; */
-    /* border: 1px solid #000; */
 }
 
 .uses-img {
-    /* float: left; */
-    /* display: flex; */
     width: 30%;
     padding-right: 10px;
-    /* padding-top: 15px; */
 }
 
 .full-size {
@@ -63,8 +68,6 @@
 }
 
 .uses-text {
-    /* float: left; */
-    /* display: flex; */
     width: 70%;
     text-align: justify;
 }
@@ -72,6 +75,7 @@
 .flex-container-features {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 35px 8px 35px 8px;
@@ -85,27 +89,25 @@
 .features-item {
     display: flex;
     flex-direction: column;
-    width: 45%;
-    /* border: 1px solid #000; */
-    /* padding: 10px; */
-    /* height: 360px; */
-    /* height: 45%; */
-    /* vertical-align: top; */ /*PODRIA QUITARLO?*/
-    /* margin: 5px; */
+    align-items: center;
+    flex: 1 1 45%;
+    border: 1px solid #000;
+}
+
+.features-img {
+    border: 1px solid #000;
 }
 
 .full-size-features {
-    /* height: 180px;
-    width: 220px; */
     max-width: 100%;
 }
 
 .features-text {
     text-align: justify; /*ME CONVIENE AGRUPAR TODOS LOS TEXT ALIGN EN UN SOLO ELEMENTO?*/
+    border: 1px solid #000;
 }
 
 #form {
-    /* padding: 35px 8px 35px 8px; */
     border-bottom: 2px solid #000;
 }
 
@@ -114,30 +116,23 @@
     margin: 0px 35px 0 35px;
 }
 
-/* .flex-container-form-top, .flex-container-form-bott {
-    margin: 0 35px 0 35px;
-} */
-
 .flex-container-form-top {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* border: 1px solid #000; */
-    /* margin-bottom: 10px; */
 }
 
 .form-left {
     display: flex;
     flex-direction: column;
     width: 60%;
-    /* border: 1px solid #000; */
 }
 
 .form-right {
     display: flex;
     flex-direction: column;
     width: 30%;
-    /* border: 1px solid #000; */
 }
 
 .form-left input {
@@ -149,13 +144,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* border: 1px solid #000; */
 }
 
 .flex-container-form-footer {
     display: flex;
     width: 100%;
-    /* border: 1px solid #000; */
 }
 
 .radio {
@@ -164,7 +157,6 @@
 
 #history {
     padding: 35px 8px 35px 8px;
-
     border-bottom: 2px solid #000;
 }
 
@@ -205,25 +197,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 }
 
 .gen-links {
     text-align: center;
-    /* border: 1px solid #000; */
 }
-
-/* .gen-links {
-    display: inline-block;
-    padding: 0;
-    width: 320px;
-    text-align: center;
-}
-
-.gen-links ol {
-    display: inline-block;
-    padding: 0;
-}
-
-.gen-links a {
-    text-decoration: none;
-} */
