@@ -38,6 +38,7 @@ h1 {
 }
 
 h2 {
+    margin: 8px 0 8px 0;
     font-size: 15px;
     line-height: 10px;
     font-weight: 400;
@@ -50,8 +51,16 @@ h3 {
     font-size: 12px;
 }
 
-p, span{
+h4 {
+    font-size: 11px;
+}
+
+p {
     font-size: 10px;
+}
+
+span {
+    font-size: 8px;
 }
 
 span {
@@ -91,18 +100,21 @@ i:hover {
 
 @media screen and (min-width: 768px){
     h1 {
-        font-size: 30px;
+        font-size: 35px;
         line-height: 47px;
     }
     h1, h2 {
         font-weight: 700;
     }
     h2 {
-        font-size: 20px;
+        font-size: 30px;
         line-height: 35px;
     }
     h3 {
-        font-size: 15px;
+        font-size: 25px;
+    }
+    h4 {
+        font-size: 20px;
     }
     p, span {
         font-size: 16px;
@@ -133,6 +145,12 @@ i:hover {
     h2 {
         font-size: 30px;
         line-height: 35px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    h4 {
+        font-size: 20px;
     }
 }
 
