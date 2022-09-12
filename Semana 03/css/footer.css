@@ -1,10 +1,10 @@
 .flex-container-footer {
     display: flex;
-    height: 70px; 
-    padding: 8px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    height: 70px; 
+    padding: 8px;
 }
 
 .footer-socials i {

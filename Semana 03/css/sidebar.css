@@ -20,10 +20,10 @@ aside ul {
     flex-direction: column;
 }
 
-aside li:not(:last-child) {
-    border-bottom: 1px solid #000; 
+aside li:not(:last-child) { 
     margin-bottom: 10px;
     padding-bottom: 10px;
+    border-bottom: 1px solid #000;
 }
 
 aside div {

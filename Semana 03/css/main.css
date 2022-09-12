@@ -13,9 +13,9 @@
 .flex-container-intro {
     display: flex;
     flex-direction: column;
-    padding: 35px 8px 35px 8px;
     justify-content: space-between;
     align-items: center;
+    padding: 35px 8px 35px 8px;
 }
 
 .intro-left {
@@ -54,17 +54,17 @@
 
 .flex-container-uses {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     padding: 0px 8px 12.450px 8px;
 }
 
 .uses-item { 
     display: flex;
-    flex: 1 1 45%;
     align-items: center;
+    flex: 1 1 45%;
 }
 
 .uses-img {
@@ -82,7 +82,6 @@
 }
 
 #features {
-    /* padding-bottom: 18.72px; */
     padding: 0px 8px 0px 8px;
     border-bottom: 2px solid #000;
 }
@@ -93,9 +92,9 @@
 
 .flex-container-features {
     display: flex;
-    align-items: center;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     padding: 0px 8px 12.450px 8px;
 }
@@ -118,8 +117,8 @@
 }
 
 #form {
-    border-bottom: 2px solid #000;
     padding: 0px 8px 0px 8px;
+    border-bottom: 2px solid #000;
 }
 
 #form h2 {
@@ -167,8 +166,8 @@
 
 .flex-container-form-footer {
     display: flex;
-    width: 100%;
     justify-content: center;
+    width: 100%;
 }
 
 #submit {
@@ -199,10 +198,10 @@
 .flex-container-history {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    text-align: justify;
+    align-items: center;
     padding: 0 8px 12.450px 8px;
+    text-align: justify;
 }
 
 .flex-container-history-par1 {
@@ -215,15 +214,15 @@
 .flex-container-history-par2 {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .flex-container-history-par2-a, .flex-container-history-par2-b  {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 #various {
@@ -233,8 +232,8 @@
 .flex-container-various {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-around;
+    align-items: center;
 }
 
 .gen-links {
@@ -242,14 +241,6 @@
 }
 
 @media screen and (min-width: 768px){
-    .flex-container-intro, 
-    .flex-container-uses, 
-    .flex-container-features, 
-    .flex-container-form-top, 
-    .flex-container-history-par2-a,
-    .flex-container-various {
-        flex-direction: row;
-    }
     #uses h2,
     #features h2,
     #form h2,
@@ -261,6 +252,14 @@
     }
     .form-left input {
         width: 90%;
+    }
+    .flex-container-intro, 
+    .flex-container-uses, 
+    .flex-container-features, 
+    .flex-container-form-top, 
+    .flex-container-history-par2-a,
+    .flex-container-various {
+        flex-direction: row;
     }
     .flex-container-form-footer {
         justify-content: left;
