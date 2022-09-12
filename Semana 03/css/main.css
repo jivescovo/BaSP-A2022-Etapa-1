@@ -65,6 +65,7 @@
     display: flex;
     align-items: center;
     flex: 1 1 45%;
+    margin: 5px;
 }
 
 .uses-img {
@@ -102,10 +103,9 @@
 .features-item {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
     align-items: center;
     flex: 1 1 45%;
-    /* border: 1px solid #000; */
+    margin: 5px;
 }
 
 .full-size-features {
@@ -113,7 +113,7 @@
 }
 
 .features-text {
-    text-align: justify; /*ME CONVIENE AGRUPAR TODOS LOS TEXT ALIGN EN UN SOLO ELEMENTO?*/
+    text-align: justify;
 }
 
 #form {
@@ -218,6 +218,11 @@
     align-items: center;
 }
 
+.flex-container-history-par2 div:nth-child(2),
+.flex-container-history-par2 div:nth-child(3) {
+    margin: 10px;
+}
+
 .flex-container-history-par2-a, .flex-container-history-par2-b  {
     display: flex;
     flex-direction: column;
@@ -246,6 +251,12 @@
     #form h2,
     #history h2 {
         text-align: left;
+    }
+    .intro-left {
+        text-align: left;
+    }
+    .intro-button {
+        justify-content: left;
     }
     .form-left {
         width: 60%;

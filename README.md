@@ -37,11 +37,35 @@
         - Id
         - Pseudoelements
 
-    How to access:
+    How to access:  https://jivescovo.github.io/BaSP-A2022-Etapa-1/Semana%2002/index.html
 
-        1 - Access folder "Semana 02"
-        2 - Open file "index.html" on your browser
+        Github Pages Link: 
+
+        1 - Clone "BaSP-A2022-Etapa-1" repository to your local machine
+        2 - Access folder "Semana 02"
+        3 - Open file "index.html" on your browser
             
     As before, make sure to download the assets folder but this time, the css and webfonts folders should be downloaded. If this isn't done, neither styles nor icons will be visible.
+
+## Week 03
+    Description: Starting out from the CSS of the previous week, I adressed the mistakes and lack of prolixity in my code,
+    mainly in the CSS selectors and properties positions inside the CSS files. 
+    Following that, I implemented Flexbox into the webiste design so as to make the Landing Desktop as responsive as possible,
+    taking into account that the design should be Mobile-First. I implemented the views for the follwing devices:
+
+        - Mobile
+        - Tablet
+        - Desktop
+
+    How to access:
+
+        Github Pages Link: https://jivescovo.github.io/BaSP-A2022-Etapa-1/Semana%2003/index.html
+
+        1 - Clone "BaSP-A2022-Etapa-1" repository to your local machine
+        2 - Access folder "Semana 03"
+        3 - Open file "index.html" on your browser
+
+    As before, make sure to download the assets folder but this time, all the css (header, footer, sidebar, main and style)
+    and webfonts folders should be downloaded. If this isn't done, neither styles nor icons will be visible.
 
 ### _By Juan Ignacio Vescovo_
