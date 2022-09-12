@@ -25,11 +25,7 @@ I began writing the plain HTML code that represents it. I made use of tags such 
 
 The objective of this week is to develop the HTML by itself in order to implement CSS on it the following week.
 
-<<<<<<< HEAD
 *How to access:*
-=======
-    How to access: [Problmetica Semana 01] (https://jivescovo.github.io/BaSP-A2022-Etapa-1/Semana%2001/index.html)
->>>>>>> d0b2fe924f399f6b24bfc30a84e2e0bc1d8a22bc
 
 Github Pages Link: https://jivescovo.github.io/BaSP-A2022-Etapa-1/Semana%2001/index.html
 
