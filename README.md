@@ -82,4 +82,29 @@ Alternative:
 As before, make sure to download the assets folder but this time, all the css files (header, footer, sidebar, main and style)
 and webfonts folders should be downloaded. If this isn't done, neither styles nor icons will be visible.
 
+## Week 04
+
+Description: After creating a new HTML file, I began solving the excercises given as homework using JavaScript
+and printing their results into the console of the previously created HTML file. Each time a block of code
+belonging to a certain set of excercises was completed, I made a commit. The subjects tackled in this week were:
+
+    - Variables and Operators
+    - Strings
+    - Arrays
+    - If Else
+    - For
+    - Functions
+
+*How to access*
+
+Github Pages Link: https://jivescovo.github.io/BaSP-A2022-Etapa-1/Semana%2004/index.html
+
+Alternative:
+
+    1 - Clone "BaSP-A2022-Etapa-1" repository to your local machine
+    2 - Access folder "Semana 04"
+    3 - Open file "index.html" on your browser
+
+Make sure to download the excercises folder, otherwise neither the excercises nor the results will be visible.
+
 ### _By Juan Ignacio Vescovo_
