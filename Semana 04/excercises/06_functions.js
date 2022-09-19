@@ -111,30 +111,26 @@ console.log(res);
 
 console.log('\n--Excercise 6.e');
 
-function testFunc (a, b) {
+function verifyInteger (n){
+    if(validateInteger(n)){
+        return n;
+    }
+    else{
+        alert('Input argument is not an integer');
+        return Math.round(n);
+    }
+}
+
+function sumNumbers (a, b){
     if(typeof(a) === 'number' && typeof(b) === 'number'){
-        if(validateInteger(a)){
-            if(validateInteger(b)){
-                return a + b;
-            }   
-            else{
-                alert('Second input argument is not an integer');
-                return Math.round(b);
-            }
-        }
-        else{
-            alert('First input argument is not an integer');
-            return Math.round(a);
-        }
+        a = verifyInteger(a);
+        b  = verifyInteger(b);
+        return a + b;
     }
     else{
         alert('One of the input arguments is not a number');
         return NaN;
     }
-}
-
-function sumNumbers (n1, n2) {
-    return testFunc(n1, n2);
 }
 
 num1 = 5, num2 = 20;
