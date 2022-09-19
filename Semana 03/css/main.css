@@ -18,7 +18,12 @@
     padding: 35px 8px 35px 8px;
 }
 
+.flex-container-intro > div {
+    margin: 5px;
+}
+
 .intro-left {
+    flex: 1 1 55%;
     text-align: center;
 }
 
@@ -261,7 +266,7 @@
     list-style:decimal;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 480px){
     #uses h2,
     #features h2,
     #form h2,

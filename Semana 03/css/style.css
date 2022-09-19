@@ -37,6 +37,11 @@ h1 {
     font-weight: 400;
 }
 
+h1 > span {
+    font-size: 20px;
+    display: block;
+}
+
 h2 {
     margin: 8px 0 8px 0;
     font-size: 15px;
@@ -95,8 +100,8 @@ i:hover {
     color: #5D5D5D;
 }
 
-@media screen and (min-width: 768px){
-    h1 {
+@media screen and (min-width: 480px){
+    h1, h1 > span {
         font-size: 30px;
         line-height: 47px;
     }
