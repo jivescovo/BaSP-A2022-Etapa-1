@@ -1,5 +1,10 @@
 # Trackgenix
 
+About the app: This is a project for a software company called GigaTech Software Solutions SA.
+Said company is in charge of developing software for other companies. The aim of the application developed
+in this repository for GigaTech, is to make it easier to register the hours worked by each employee
+in each project and in each team.
+
 ## Week 00
 
 Description: 2 people work teams developed the assigned views. In my case, this view was for an Employee PM role.
