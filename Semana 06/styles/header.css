@@ -1,0 +1,28 @@
+.flex-container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 70px; 
+    padding: 8px;
+    border-bottom: 2px solid #FF3E1D;
+}
+
+.header-left p {
+    margin: 0;
+}
+
+.header-right i {
+    font-size: 14px;
+}
+
+@media screen and (min-width: 768px){
+    .header-right i {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .header-right i {
+        font-size: 32px;
+    }
+}

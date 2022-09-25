@@ -112,4 +112,19 @@ Alternative:
 
 Make sure to download the excercises folder, otherwise neither the excercises nor the results will be visible.
 
+## Week 06
+
+Description: Using the work done in week 03 as basis, I implemented a form for both sign-up and login functionality.
+All validations for the input fields, are done via Javascript by accesing the DOM of the website.
+
+*How to access*
+
+Github Pages Link: https://jivescovo.github.io/BaSP-A2022-Etapa-1/Semana%2006/landing.html
+
+Alternative:
+
+    1 - Clone "BaSP-A2022-Etapa-1" repository to your local machine
+    2 - Access folder "Semana 06"
+    3 - Open file "landing.html" on your browser
+
 ### _By Juan Ignacio Vescovo_
