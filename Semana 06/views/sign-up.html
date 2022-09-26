@@ -4,13 +4,14 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="../styles/reset.css">
         <link rel="stylesheet" type="text/css" href="../styles/sidebar.css">
         <link rel="stylesheet" type="text/css" href="../styles/header.css">
         <link rel="stylesheet" type="text/css" href="../styles/footer.css">
         <link rel="stylesheet" type="text/css" href="../styles/landing.css">
         <link rel="stylesheet" type="text/css" href="../styles/styles.css">
         <link rel="stylesheet" type="text/css" href="../styles/sign-up.css">
+        <script src="../javascript/sign-up.js"></script>
         <title>Trackgenix: Sign-Up</title>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../styles/all.min.css">
@@ -90,43 +91,62 @@
                     </div>
                 </header>
                 <main>
-                    <form>
+                    <div class="title-flex">
                         <h2>Sign Up</h2>
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name">
+                    </div> 
+                    <form>
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name">
+                            <span id="nameError"></span>
 
-                        <label for="surname">Surname</label>
-                        <input type="text" name="surname" id="surname">
+                            <label for="surname">Surname</label>
+                            <input type="text" name="surname" id="surname">
+                            <span id="surnameError"></span>
 
-                        <label for="dni">DNI</label>
-                        <input type="text" name="dni" id="dni">
-                        
-                        <label for="birthDate">Date of Birth</label>
-                        <input type="text" name="birthDate" id="birthDate">
-                        
-                        <label for="phoneNumber">Phone Number</label>
-                        <input type="text" name="phoneNumber" id="phoneNumber">
+                            <label for="dni">DNI</label>
+                            <input type="text" name="dni" id="dni">
+                            <span id="dniError"></span>
+                            
+                            <label for="birthDate">Date of Birth</label>
+                            <input type="date" name="birthDate" id="birthDate">
+                            <span id="birthDateError"></span>
+                            
+                            <label for="phoneNumber">Phone Number</label>
+                            <input type="text" name="phoneNumber" id="phoneNumber">
+                            <span id="phoneError"></span>
 
-                        <label for="address">Address</label>
-                        <input type="text" name="address" id="address">
+                            <label for="address">Address</label>
+                            <input type="text" name="address" id="address">
+                            <span id="addressError"></span>
+                        </div>
 
-                        <label for="location">Location</label>
-                        <input type="text" name="location" id="location">
+                        <div>
+                            <label for="location">Location</label>
+                            <input type="text" name="location" id="location">
+                            <span id="locationError"></span>
 
-                        <label for="zipCode">ZIP Code</label>
-                        <input type="text" name="zipCode" idEmailode">
+                            <label for="zipCode">ZIP Code</label>
+                            <input type="text" name="zipCode" id="zipCode">
+                            <span id="zipCodeError"></span>
 
-                        <label for="email">Email</label>
-                        <input type="text" name="email" id="email">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email">
+                            <span id="emailError"></span>
 
-                        <label for="password">Password</label>
-                        <input type="text" name="password" id="password">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password">
+                            <span id="passwordError"></span>
 
-                        <label for="repeatPassword">Repeat Password</label>
-                        <input type="text" name="repeatPassword" id="repeatPassword">
+                            <label for="repeatPassword">Repeat Password</label>
+                            <input type="password" name="repeatPassword" id="repeatPassword">
+                            <span id="passwordRepeatError"></span>
+
+                            <input type="submit" name="create" value="Create" id="create">
+                        </div>
                     </form>
                 </main>
-                <!-- <footer>
+                <footer>
                     <div class="flex-container-footer">
                         <div class="footer-socials">
                             <a href="https://www.facebook.com/">
@@ -149,7 +169,7 @@
                             <span>Copyright &copy; 2022 GigaTech Software Solutions SA. All rights reserved.</span>
                         </div>
                     </div>
-                </footer> -->
+                </footer>
             </div>
         </div>
     </body>
