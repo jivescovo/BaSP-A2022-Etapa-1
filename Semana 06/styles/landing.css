@@ -130,6 +130,16 @@
     text-align: center;
 }
 
+#form span {
+    display: block;
+    margin-bottom: 5px;
+    color: red;
+}
+
+.fail {
+    border: 3px solid red;
+}
+
 .flex-container-form {
     padding: 0px 0px 12.450px 0px;
 }
@@ -171,7 +181,7 @@
 }
 
 .flex-container-form-bott textarea {
-    margin-top: 5px;
+    margin: 5px 0 5px 0;
 }
 
 .flex-container-form-footer {
