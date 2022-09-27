@@ -119,7 +119,7 @@ All validations for the input fields, are done via Javascript by accesing the DO
 
 *How to access*
 
-Github Pages Link: https://jivescovo.github.io/BaSP-A2022-Etapa-1/Semana%2006/landing.html
+Github Pages Link: https://jivescovo.github.io/BaSP-A2022-Etapa-1/Semana%2006/views/landing.html
 
 Alternative:
 
