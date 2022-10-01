@@ -2,7 +2,7 @@ window.onload = function () {
 
     var span = document.querySelectorAll('form > span');
     var fields = [];
-    for(var j = 0; j < span.length; j++){
+    for(var j = 0; j < span.length; j++) {
         fields[j] = span[j].id;
     }
 
@@ -16,8 +16,7 @@ window.onload = function () {
             fields[0] = 'emailError';
             email.classList.add('fail');
             span[0].innerHTML = 'Please input a valid email address';
-        }
-        else{
+        } else {
             fields[0] = '';
             span[0].innerHTML = '';
         }
@@ -33,9 +32,9 @@ window.onload = function () {
     var password = document.getElementById('password');
     password.onblur = function () {
         var j = f = n = l = L = c = 0;
-        if(password.value.length >= 8){            
-            for (var i = 0; i < password.value.length; i++){
-                switch(true){
+        if (password.value.length >= 8) {            
+            for (var i = 0; i < password.value.length; i++) {
+                switch(true) {
                     case password.value[i] === ' ':
                         password.classList.add('fail');
                         f++;
@@ -56,18 +55,16 @@ window.onload = function () {
                         break;
                 }
             }
-            if(j < 3 || f != 0){
+            if (j < 3 || f != 0) {
                 fields[1] = 'passwordError';
                 password.classList.add('fail');
                 span[1].innerHTML = 'Please input a valid password';
-            }
-            else{
+            } else {
                 fields[1] = '';
                 password.classList.remove('fail');
                 span[1].innerHTML = '';
             }
-        }
-        else if(password.value != ''){
+        } else if (password.value != '') {
             fields[1] = 'passwordError';
             password.classList.add('fail');
             span[1].innerHTML = 'Please input a valid password';
@@ -86,25 +83,25 @@ window.onload = function () {
     button.onclick = function (e) {
         e.preventDefault();
         var error, failure = success = '';
-        for(var i = 0; i < fields.length; i++){
-            switch(true){
+        for(var i = 0; i < fields.length; i++) {
+            switch(true) {
                 case fields[i] === 'emailError':
                     error = document.getElementById('emailError');
-                    if(email.value == ''){
+                    if (email.value == '') {
                         error.innerHTML = 'Please input an email address';
                         failure = 'Email address missing\n';
                     }
-                    else{  
+                    else {  
                         failure = 'Please input a valid email address\n';
                     }
                     break;
                 case fields[i] === 'passwordError':
                     error = document.getElementById('passwordError');
-                    if(password.value == ''){
+                    if (password.value == '') {
                         error.innerHTML = 'Please input a password';
                         failure = failure + 'Password missing';
                     }
-                    else{
+                    else {
                         failure = failure + 'Please input a valid password';
                     }
                     break;
@@ -112,39 +109,38 @@ window.onload = function () {
                     break;
             }
         }
-        if(failure != ''){
+        if (failure != '') {
             alert(failure);
-        }
-        else{
+        } else {
             // success = email.value + '\n' + password.value;
             // alert('Login Successful\n' + success);
-            var resu;
             fetch('https://basp-m2022-api-rest-server.herokuapp.com/login?' + new URLSearchParams({
                 email: email.value,
                 password: password.value
             }))
             // fetch('https://basp-m2022-api-rest-server.herokuapp.com/login?' + 'email=' + email.value + '&password=' + password.value)
                 .then((result) => {
-                    if(result.status >= 400){
+                    if (result.status >= 400) {
                         result.json()
                             .then((res) => {
+                                console.log(res)
                                 throw new Error (result.status + ' ' + result.statusText + '\n' + res.msg);
                             })
                             .catch((err) => {
-                                alert(err)
+                                alert(err);
                             })
                         // throw new Error (result.status + ' ' + result.statusText); 
-                    }else{
-                        console.log(result)
+                    } else {
                         result.json()
                             .then((res) => {
+                                console.log(res)
                                 alert('Request successful\n' + 'Response from Server: ' + res.msg);
                             })
                     }
                 })
-                // .catch((err) => {
-                //     alert(err);
-                // })
+                .catch(() => {
+                    alert('Something went wrong with the fetch method');
+                })
         }
     }
 }
