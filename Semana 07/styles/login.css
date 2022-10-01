@@ -1,0 +1,35 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    margin: 10px 0 0 0;
+}
+
+.fail {
+    border: 3px solid red;
+}
+
+form > span {
+    margin-top: 5px;
+    color: red;
+}
+
+#login {
+    padding: 5px 10px;
+    margin: 8px 4px;
+    background-color: #AACE9B;
+    color: #373867;
+    border-radius: 4px;
+    font-size: 12px;
+}

@@ -1,0 +1,30 @@
+.flex-container-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    height: 70px; 
+    padding: 8px;
+}
+
+.footer-socials i {
+    font-size: 14px;
+}
+
+.footer span {
+    margin: 0;
+}
+
+@media screen and (min-width: 768px){
+    .footer-socials i {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .footer-socials i {
+        font-size: 32px;
+    }
+}
+

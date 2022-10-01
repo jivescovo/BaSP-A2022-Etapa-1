@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+html,body {
+    margin: 0;
+}
+
+body {
+    background-color: #fff;
+    color: #373867;
+    font-family: 'Roboto';
+    overflow: hidden;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.right-side {
+    overflow-y: auto;
+}
+
+a {
+    padding-left: 5px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF5349;
+}
+
+h1 {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+h1 > span {
+    font-size: 20px;
+    display: block;
+}
+
+h2 {
+    margin: 8px 0 8px 0;
+    font-size: 15px;
+    line-height: 10px;
+    font-weight: 400;
+    text-decoration-line: underline;
+    text-decoration-color: #FF3E1D;
+    text-decoration-thickness: 2px; 
+}
+
+h3 {
+    font-size: 12px;
+}
+
+h4 {
+    font-size: 11px;
+}
+
+p, .form-right label {
+    font-size: 10px;
+}
+
+span {
+    font-size: 8px;
+    font-weight: bold;
+}
+
+button {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 4px 2px;
+    text-align: center;
+    border: none;
+    color: white;
+    background-color: white; 
+    color: #FF5349; 
+    border: 1px solid #FF5349;
+    border-radius: 2px;
+    text-decoration: none;
+    font-size: 8px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    cursor: pointer;
+} 
+
+button:hover {
+    color: white;
+    background-color: #FF5349;
+}
+
+i:hover {
+    color: #FF5349;
+}
+
+.fa-brands {
+    color: #5D5D5D;
+}
+
+@media screen and (min-width: 480px){
+    h1, h1 > span {
+        font-size: 30px;
+        line-height: 47px;
+    }
+    h1, h2 {
+        font-weight: 700;
+    }
+    h2 {
+        font-size: 28px;
+        line-height: 35px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    p, span, .form-right label {
+        font-size: 14px;
+    }
+    button {
+        padding: 10px 30px;
+        margin: 8px 4px;
+        font-size: 12px;
+        border-radius: 4px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .wrapper{
+        display: flex;
+        flex: 1;
+    }
+    .left-side {
+        flex: 25%;
+    }
+    .right-side {
+        flex: 75%;
+        margin-left: 30px;
+    }
+}
+
