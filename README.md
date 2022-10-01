@@ -127,4 +127,18 @@ Alternative:
     2 - Access folder "Semana 06"
     3 - Open file "landing.html" on your browser
 
+## Week 07
+
+Description: Using the work of week 06 to check the input values, so as not to send incorrect data into the query parameters, I made a request to a web server via the fetch method while also making use of promises (.then & .catch). Afterwards, I showed the user, either the success or failiure of the request, via an alert.
+
+*How to access*
+
+Github Pages Link: https://jivescovo.github.io/BaSP-A2022-Etapa-1/Semana%2007/views/landing.html
+
+Alternative:
+
+    1 - Clone "BaSP-A2022-Etapa-1" repository to your local machine
+    2 - Access folder "Semana 07"
+    3 - Open file "landing.html" on your browser
+
 ### _By Juan Ignacio Vescovo_
