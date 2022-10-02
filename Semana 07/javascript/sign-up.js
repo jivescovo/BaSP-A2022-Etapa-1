@@ -1,36 +1,36 @@
 window.onload = function () {
     var span = document.querySelectorAll('form > div > span');
     var fields = [];
-    for(var j = 0; j < span.length; j++) {
+    for (var j = 0; j < span.length; j++) {
         switch (true) {
-            case localStorage.getItem('name') == 'null' && j == 0:
+            case localStorage.getItem('name') == null && j == 0:
                 fields[j] = span[j].id;
                 break;
-            case localStorage.getItem('lastName') == 'null' && j == 1:
+            case localStorage.getItem('lastName') == null && j == 1:
                 fields[j] = span[j].id;
                 break;
-            case localStorage.getItem('dni') == 'null' && j == 2:
+            case localStorage.getItem('dni') == null && j == 2:
                 fields[j] = span[j].id;
                 break;
-            case localStorage.getItem('dob') == 'null' && j == 3:
+            case localStorage.getItem('dob') == null && j == 3:
                 fields[j] = span[j].id;
                 break;
-            case localStorage.getItem('phone') == 'null' && j == 4:
+            case localStorage.getItem('phone') == null && j == 4:
                 fields[j] = span[j].id;
                 break;
-            case localStorage.getItem('address') == 'null' && j == 5:
+            case localStorage.getItem('address') == null && j == 5:
                 fields[j] = span[j].id;
                 break;
-            case localStorage.getItem('city') == 'null' && j == 6:
+            case localStorage.getItem('city') == null && j == 6:
                 fields[j] = span[j].id;
                 break;
-            case localStorage.getItem('zip') == 'null' && j == 7:
+            case localStorage.getItem('zip') == null && j == 7:
                 fields[j] = span[j].id;
                 break;
-            case localStorage.getItem('email') == 'null' && j == 8:
+            case localStorage.getItem('email') == null && j == 8:
                 fields[j] = span[j].id;
                 break;
-            case localStorage.getItem('password') == 'null' && j == 9:
+            case localStorage.getItem('password') == null && j == 9:
                 fields[j] = span[j].id;
                 break;
             default:
@@ -45,7 +45,7 @@ window.onload = function () {
 
     firstName.onblur = function () {
         if (firstName.value.length > 3) {
-            for(var i = 0; i < firstName.value.length; i++) {
+            for (var i = 0; i < firstName.value.length; i++) {
                 if (!isNaN(firstName.value[i]) && firstName.value[i] != ' ') {
                     fields[0] = 'nameError';
                     firstName.classList.add('fail');
@@ -81,7 +81,7 @@ window.onload = function () {
 
     surname.onblur = function () {
         if (surname.value.length > 3) {
-            for(var i = 0; i < surname.value.length; i++) {
+            for (var i = 0; i < surname.value.length; i++) {
                 if (!isNaN(surname.value[i])) {
                     fields[1] = 'surnameError';
                     surname.classList.add('fail');
@@ -117,7 +117,7 @@ window.onload = function () {
 
     dni.onblur = function () {
         if (dni.value.length > 7) {
-            for(var i = 0; i < dni.value.length; i++) {
+            for (var i = 0; i < dni.value.length; i++) {
                 if (isNaN(dni.value[i])) {
                     fields[2] = 'dniError';
                     dni.classList.add('fail');
@@ -172,7 +172,7 @@ window.onload = function () {
 
     phone.onblur = function () {
         if (phone.value.length == 10) {
-            for(var i = 0; i < phone.value.length; i++) {
+            for (var i = 0; i < phone.value.length; i++) {
                 if (isNaN(phone.value[i])) {
                     fields[4] = 'phoneError';
                     phone.classList.add('fail');
@@ -209,7 +209,7 @@ window.onload = function () {
     address.onblur = function () {
         var let = numb = space = 0;
         if (address.value.length >= 5) {
-            for(var i = 0; i < address.value.length; i++) {
+            for (var i = 0; i < address.value.length; i++) {
                 // if (address.value[i] == ' ' && address.value[i+1] == '') {
                 //     fields[5] = 'addressError';
                 //     address.classList.add('fail');
@@ -258,7 +258,7 @@ window.onload = function () {
 
     location.onblur = function () {
         if (location.value.length > 3) {
-            for(var i = 0; i < location.value.length; i++) {
+            for (var i = 0; i < location.value.length; i++) {
                 if (isNaN(location.value[i]) && !isNaN(location.value[i+1]) && location.value[i+1] != ' ' ||
                 !isNaN(location.value[i]) && location.value[i] != ' ' && isNaN(location.value[i+1])) {
                     fields[6] = 'locationError';
@@ -297,7 +297,7 @@ window.onload = function () {
 
     zipCode.onblur = function () {
         if (4 <= zipCode.value.length && zipCode.value.length <= 5) {
-            for(var i = 0; i < zipCode.value.length; i++) {
+            for (var i = 0; i < zipCode.value.length; i++) {
                 if (isNaN(zipCode.value[i])) {
                     fields[7] = 'zipCodeError';
                     zipCode.classList.add('fail');
@@ -378,20 +378,40 @@ window.onload = function () {
                         break;
                 }
             }
-            if (j < 3 || f != 0) {
+            if (f != 0) {
                 fields[9] = 'passwordError';
                 password.classList.add('fail');
-                span[9].innerHTML = 'Please input a valid password';
-            } else {
+                span[9].innerHTML = 'Password should not have spaces';
+            } else if (L == 0 || l == 0) {
+                fields[9] = 'passwordError';
+                password.classList.add('fail');
+                span[9].innerHTML = 'Password should have at least one uppercase and one lower case letter';
+            } else if (n == 0) {
+                fields[9] = 'passwordError';
+                password.classList.add('fail');
+                span[9].innerHTML = 'Password should have at least one number';
+            } else if (j == 3) {
                 fields[9] = '';
                 password.classList.remove('fail');
                 span[9].innerHTML = '';
             }
+
+
+
+            // if (j < 3 || f != 0) {
+            //     fields[9] = 'passwordError';
+            //     password.classList.add('fail');
+            //     span[9].innerHTML = 'Please input a valid password';
+            // } else {
+            //     fields[9] = '';
+            //     password.classList.remove('fail');
+            //     span[9].innerHTML = '';
+            // }
         }
         else if (password.value != '') {
             fields[9] = 'passwordError';
             password.classList.add('fail');
-            span[9].innerHTML = 'Please input a valid password';
+            span[9].innerHTML = 'Password must have atleast 8 chracters';
         }
     }
     password.onfocus = function () {
@@ -419,25 +439,6 @@ window.onload = function () {
         span[10].innerHTML = '';
     }
 
-    //Local storage data load
-
-    firstName.value = localStorage.getItem('name');
-    surname.value = localStorage.getItem('lastName');
-    dni.value = localStorage.getItem('dni');
-    dob.value = convertLsToInput(localStorage.getItem('dob'));
-    phone.value = localStorage.getItem('phone');
-    address.value = localStorage.getItem('address');
-    location.value = localStorage.getItem('city');
-    zipCode.value = localStorage.getItem('zip');
-    email.value = localStorage.getItem('email');
-    password.value = repeatPassword.value = localStorage.getItem('password');
-
-    function convertLsToInput (date) {
-        date = date.substring(6) + '-' + date.substring(0,2) + '-' + date.substring(3,5);
-        return date;
-    }
-    
-
     // Register form event
 
     var button = document.getElementById('create');
@@ -445,7 +446,7 @@ window.onload = function () {
     button.onclick = function (e) {
         e.preventDefault();
         var error, failure = success = '';
-        for(var i = 0; i < fields.length; i++) {
+        for (var i = 0; i < fields.length; i++) {
             switch(true) {
                 case fields[i] === 'nameError':
                     error = document.getElementById('nameError');
@@ -573,7 +574,7 @@ window.onload = function () {
                         result.json()
                             .then((res) => {
                                 console.log(res)
-                                for(var i = 0; i < res.errors.length; i++) {
+                                for (var i = 0; i < res.errors.length; i++) {
                                     response = response + res.errors[i].msg + '\n';
                                 }
                                 console.log(response)
@@ -587,12 +588,20 @@ window.onload = function () {
                         result.json()
                             .then((res) => {
                                 console.log(res)
-                                for (const property in res.data) {
-                                    localStorage.setItem(`${property}`, `${res.data[property]}`);
+                                for (var prop in res.data) {
+                                    // localStorage.setItem(`${property}`, `${res.data[property]}`);
+                                    // success = success + `${property}: ${res.data[property]}\n`;
+                                    console.log(prop, res.data[prop])
+                                    if (prop !== 'id') {
+                                        localStorage.setItem(prop, res.data[prop]);
+                                        success = success + prop + ': ' + res.data[prop] + '\n';
+                                    }
                                 }
-                                alert('Request successful\n' + 'Response from Server: ' + res.msg);
+                                alert('Request successful\n' + 'Response from Server: ' + res.msg + '\n' + success);
                             })
-                        
+                            .catch(() => {
+                                alert('Something went wrong with the request');
+                            })  
                     }
                 })
                 .catch(() => {
@@ -600,4 +609,28 @@ window.onload = function () {
                 })
         }
     }
+
+    //Local storage data load
+
+    firstName.value = localStorage.getItem('name');
+    surname.value = localStorage.getItem('lastName');
+    dni.value = localStorage.getItem('dni');
+    dob.value = convertLsToInput(localStorage.getItem('dob'));
+    phone.value = localStorage.getItem('phone');
+    address.value = localStorage.getItem('address');
+    location.value = localStorage.getItem('city');
+    zipCode.value = localStorage.getItem('zip');
+    email.value = localStorage.getItem('email');
+    password.value = repeatPassword.value = localStorage.getItem('password');
+
+    function convertLsToInput (date) {
+        if (date === null) {
+            return null;
+        }
+        else {
+            date = date.substring(6) + '-' + date.substring(0,2) + '-' + date.substring(3,5);
+            return date;       
+        }
+    }
+
 }
