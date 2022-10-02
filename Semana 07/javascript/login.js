@@ -2,7 +2,7 @@ window.onload = function () {
 
     var span = document.querySelectorAll('form > span');
     var fields = [];
-    for(var j = 0; j < span.length; j++) {
+    for (var j = 0; j < span.length; j++) {
         fields[j] = span[j].id;
     }
 
@@ -54,20 +54,38 @@ window.onload = function () {
                     default:
                         break;
                 }
-            }
-            if (j < 3 || f != 0) {
+            } if (f != 0) {
                 fields[1] = 'passwordError';
                 password.classList.add('fail');
-                span[1].innerHTML = 'Please input a valid password';
-            } else {
+                span[1].innerHTML = 'Password should not have spaces';
+            } else if (L == 0 || l == 0) {
+                fields[1] = 'passwordError';
+                password.classList.add('fail');
+                span[1].innerHTML = 'Password should have at least one uppercase and one lower case letter';
+            } else if (n == 0) {
+                fields[1] = 'passwordError';
+                password.classList.add('fail');
+                span[1].innerHTML = 'Password should have at least one number';
+            } else if (j == 3) {
                 fields[1] = '';
                 password.classList.remove('fail');
                 span[1].innerHTML = '';
             }
+
+            
+            // if (j < 3 || f != 0) {
+            //     fields[1] = 'passwordError';
+            //     password.classList.add('fail');
+            //     span[1].innerHTML = 'Please input a valid password';
+            // } else {
+            //     fields[1] = '';
+            //     password.classList.remove('fail');
+            //     span[1].innerHTML = '';
+            // }
         } else if (password.value != '') {
             fields[1] = 'passwordError';
             password.classList.add('fail');
-            span[1].innerHTML = 'Please input a valid password';
+            span[1].innerHTML = 'Password must have atleast 8 characters';
         }
     }
 
@@ -83,7 +101,7 @@ window.onload = function () {
     button.onclick = function (e) {
         e.preventDefault();
         var error, failure = success = '';
-        for(var i = 0; i < fields.length; i++) {
+        for (var i = 0; i < fields.length; i++) {
             switch(true) {
                 case fields[i] === 'emailError':
                     error = document.getElementById('emailError');
