@@ -129,7 +129,12 @@ Alternative:
 
 ## Week 07
 
-Description: Using the work of week 06 to check the input values, so as not to send incorrect data into the query parameters, I made a request to a web server via the fetch method while also making use of promises (.then & .catch). Afterwards, I showed the user, either the success or failiure of the request, via an alert.
+Description: Using the work of week 06 to check the input values, so as not to send incorrect data
+into the query parameters, I made a request to a web server via the fetch method while
+also making use of promises (.then & .catch).
+Afterwards, I showed the user, either the success or failiure of the request, via an alertwhich later I built as a modal.
+Also, in the sign-up view I saved to local storage the reponse from the server so that when
+the form is reloaded, the fields are automatically filled.
 
 *How to access*
 
