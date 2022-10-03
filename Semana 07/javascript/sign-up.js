@@ -189,7 +189,7 @@ window.onload = function () {
         else if (phone.value != '') {
             fields[4] = 'phoneError';
             phone.classList.add('fail');
-            span[4].innerHTML = 'Phone number should be 10 numbers in length';
+            span[4].innerHTML = 'Phone number should be 10 numbers in length and contain only numbers';
         } else {
             fields[4] = 'phoneError';
             phone.classList.remove('fail');
@@ -445,107 +445,167 @@ window.onload = function () {
     
     button.onclick = function (e) {
         e.preventDefault();
-        var error, failure = success = '';
+        //var error, failure = success = '';
+        var error = '';
+        var errorCount = 0;
         for (var i = 0; i < fields.length; i++) {
             switch(true) {
                 case fields[i] === 'nameError':
                     error = document.getElementById('nameError');
+                    errorCount++;
                     if (firstName.value == '') {
                         error.innerHTML = 'Please input a name';
-                        failure = 'Name missing\n';
+                        //failure = 'Name missing\n';
+                        modalContent[i].innerHTML = 'Name missing';
+                        modalContent[i].classList.add('test');
                     } else {
-                        failure = 'Please input a valid name\n';
+                        //failure = 'Please input a valid name\n';
+                        modalContent[i].innerHTML = 'Please input a valid name';
+                        modalContent[i].classList.add('test');
                     }
                     break;
                 case fields[i] === 'surnameError':
                     error = document.getElementById('surnameError');
+                    errorCount++;
                     if (surname.value == '') {
                         error.innerHTML = 'Please input a surname';
-                        failure = failure + 'Surname missing\n';
+                        //failure = failure + 'Surname missing\n';
+                        modalContent[i].innerHTML = 'Surname missing';
+                        modalContent[i].classList.add('test');
                     } else {
-                        failure = failure + 'Please input a valid surnaname\n';
+                        //failure = failure + 'Please input a valid surnaname\n';
+                        modalContent[i].innerHTML = 'Please input a valid surname';
+                        modalContent[i].classList.add('test');
                     }
                     break;
                 case fields[i] === 'dniError':
                     error = document.getElementById('dniError');
+                    errorCount++;
                     if (dni.value == '') {
                         error.innerHTML = 'Please input a DNI';
-                        failure = failure + 'DNi missing\n';
+                        //failure = failure + 'DNi missing\n';
+                        modalContent[i].innerHTML = 'DNI missing';
+                        modalContent[i].classList.add('test');
                     } else {
-                        failure = failure + 'Please input a valid DNI\n';
+                        //failure = failure + 'Please input a valid DNI\n';
+                        modalContent[i].innerHTML = 'Please input a valid DNI';
+                        modalContent[i].classList.add('test');
                     }
                     break;
                 case fields[i] === 'birthDateError':
                     error = document.getElementById('birthDateError');
+                    errorCount++;
                     if (dob.value == '') {
                         error.innerHTML = 'Please input a Date of Birth';
-                        failure = failure + 'Date of Birth missing\n';
+                        //failure = failure + 'Date of Birth missing\n';
+                        modalContent[i].innerHTML = 'Date of Birth missing';
+                        modalContent[i].classList.add('test');
                     }
                     break;
                 case fields[i] === 'phoneError':
                     error = document.getElementById('phoneError');
+                    errorCount++;
                     if (phone.value == '') {
                         error.innerHTML = 'Please input a phone number';
-                        failure = failure + 'Phone number missing\n';
+                        //failure = failure + 'Phone number missing\n';
+                        modalContent[i].innerHTML = 'Phone number missing';
+                        modalContent[i].classList.add('test');
                     } else {
-                        failure = failure + 'Please input a valid phone number\n';
+                        //failure = failure + 'Please input a valid phone number\n';
+                        modalContent[i].innerHTML = 'Please input a valid phone number';
+                        modalContent[i].classList.add('test');
                     }
                     break;
                 case fields[i] === 'addressError':
                     error = document.getElementById('addressError');
+                    errorCount++;
                     if (address.value == '') {
                         error.innerHTML = 'Please input an address';
-                        failure = failure + 'Address missing\n';
+                        //failure = failure + 'Address missing\n';
+                        modalContent[i].innerHTML = 'Address missing';
+                        modalContent[i].classList.add('test');
                     } else {
-                        failure = failure + 'Please input a valid address\n';
+                        //failure = failure + 'Please input a valid address\n';
+                        modalContent[i].innerHTML = 'Please input a valid address';
+                        modalContent[i].classList.add('test');
                     }
                     break;
                 case fields[i] === 'locationError':
                     error = document.getElementById('locationError');
+                    errorCount++;
                     if (location.value == '') {
                         error.innerHTML = 'Please input a location';
-                        failure = failure + 'Location missing\n';
+                        //failure = failure + 'Location missing\n';
+                        modalContent[i].innerHTML = 'Loacation missing';
+                        modalContent[i].classList.add('test');
                     } else {
-                        failure = failure + 'Please input a valid location\n';
+                        //failure = failure + 'Please input a valid location\n';
+                        modalContent[i].innerHTML = 'Please input a valid location';
+                        modalContent[i].classList.add('test');
                     }
                     break;
                 case fields[i] === 'zipCodeError':
                     error = document.getElementById('zipCodeError');
+                    errorCount++;
                     if (zipCode.value == '') {
                         error.innerHTML = 'Please input a Zip Code';
-                        failure = failure + 'Zip Code missing\n';
+                        //failure = failure + 'Zip Code missing\n';
+                        modalContent[i].innerHTML = 'Zip Code missing';
+                        modalContent[i].classList.add('test');
                     } else {
-                        failure = failure + 'Please input a valid Zip Code\n';
+                        //failure = failure + 'Please input a valid Zip Code\n';
+                        modalContent[i].innerHTML = 'Please input a valid zip code';
+                        modalContent[i].classList.add('test');
                     }
                     break;
                 case fields[i] === 'emailError':
                     error = document.getElementById('emailError');
+                    errorCount++;
                     if (email.value == '') {
                         error.innerHTML = 'Please input an email';
-                        failure = failure + 'Email missing\n';
+                        //failure = failure + 'Email missing\n';
+                        modalContent[i].innerHTML = 'Email address missing';
+                        modalContent[i].classList.add('test');
                     } else {
-                        failure = failure + 'Please input a valid email\n';
+                        //failure = failure + 'Please input a valid email\n';
+                        modalContent[i].innerHTML = 'Please input a valid email';
+                        modalContent[i].classList.add('test');
                     }
                     break;
                 case fields[i] === 'passwordError':
                     error = document.getElementById('passwordError');
+                    errorCount++;
                     if (password.value == '') {
                         error.innerHTML = 'Please input a password';
-                        failure = failure + 'Password missing\n';
+                        //failure = failure + 'Password missing\n';
+                        modalContent[i].innerHTML = 'Password missing';
+                        modalContent[i].classList.add('test');
                     } else {
-                        failure = failure + 'Please input a valid password\n';
+                        //failure = failure + 'Please input a valid password\n';
+                        modalContent[i].innerHTML = 'Please input a valid password';
+                        modalContent[i].classList.add('test');
                     }
                     break;
                 case fields[i] === 'passwordRepeatError':
                     error = document.getElementById('passwordRepeatError');
-                    failure = failure + 'Please make sure passwords match\n';
+                    errorCount++;
+                    //failure = failure + 'Please make sure passwords match\n';
+                    modalContent[i].innerHTML = 'Please input a make sure passwords match';
+                    modalContent[i].classList.add('test');
                     break;
                 default:
                     break;
             }
         }
-        if (failure != '') {
-            alert(failure);
+        // if (failure != '') {
+        if (errorCount != 0) {
+            // alert(failure);
+            // for (var i = 0; i < fields.length; i++) {
+            //     modalContent[i].innerHTML = fields[i]; 
+            // }
+            text.innerHTML = 'Failure: check input arguments';
+            modal.style.display = 'flex';
+
         } else {
             // success = firstName.value + '\n' + surname.value + '\n' + dni.value + '\n' + dob.value + '\n' 
             // + phone.value + '\n' + address.value + '\n' + location.value + '\n' + zipCode.value + '\n' + email.value + '\n' 
@@ -574,30 +634,47 @@ window.onload = function () {
                         result.json()
                             .then((res) => {
                                 console.log(res)
+                                // for (var i = 0; i < res.errors.length; i++) {
+                                //     response = response + res.errors[i].msg + '\n';
+                                // }
+                                // console.log(response)
+                                // throw new Error (result.status + ' ' + result.statusText + '\n' + response);
                                 for (var i = 0; i < res.errors.length; i++) {
-                                    response = response + res.errors[i].msg + '\n';
+                                   modalContent[i].innerHTML = res.errors[i].msg;
+                                   modalContent[i].classList.add('test'); 
                                 }
-                                console.log(response)
-                                throw new Error (result.status + ' ' + result.statusText + '\n' + response);
+                                throw new Error (res.msg)
                             })
                             .catch((err) => {
-                                alert(err);
+                                // alert(err);
+                                text.innerHTML = 'Response from server: ' + result.status + ' ' + result.statusText;
+                                modal.style.justifyContent = 'center';
+                                modal.style.display = "flex";
                             })
                     }
                     else {
                         result.json()
                             .then((res) => {
                                 console.log(res)
+                                var f = 0;
                                 for (var prop in res.data) {
                                     // localStorage.setItem(`${property}`, `${res.data[property]}`);
                                     // success = success + `${property}: ${res.data[property]}\n`;
                                     console.log(prop, res.data[prop])
-                                    if (prop !== 'id') {
-                                        localStorage.setItem(prop, res.data[prop]);
-                                        success = success + prop + ': ' + res.data[prop] + '\n';
-                                    }
+                                    // if (prop !== 'id') {
+                                    //     localStorage.setItem(prop, res.data[prop]);
+                                    //     success = success + prop + ': ' + res.data[prop] + '\n';
+                                    // }
+                                    localStorage.setItem(prop, res.data[prop]);
+                                    modalContent[f].innerHTML = prop + ': ' + res.data[prop] + '\n';
+                                    modalContent[f].classList.add('test');
+                                    f++;
                                 }
-                                alert('Request successful\n' + 'Response from Server: ' + res.msg + '\n' + success);
+                                console.log(text)
+                                // alert('Request successful\n' + 'Response from Server: ' + res.msg + '\n' + success);
+                                text.innerHTML = 'Response from server: ' + result.status + ' ' + result.statusText;
+                                modal.style.justifyContent = 'center';
+                                modal.style.display = "flex";
                             })
                             .catch(() => {
                                 alert('Something went wrong with the request');
@@ -632,5 +709,33 @@ window.onload = function () {
             return date;       
         }
     }
+
+     // Modals
+
+     var modal = document.getElementById("myModal");
+     var modalContent = document.querySelectorAll('.modal-body > p');
+     var cross = document.getElementsByClassName("close")[0];
+     var text = document.getElementsByClassName("modal-text-span")[0];
+ 
+     cross.onclick = function() {
+         for (var i = 0; i < modalContent.length; i++) {
+             clear(modalContent[i]);
+         }
+         modal.style.display = "none";
+     }
+ 
+     window.onclick = function(event) {
+         
+         if (event.target == modal) {
+             for (var i = 0; i < modalContent.length; i++) {
+                 clear(modalContent[i]);
+             }
+             modal.style.display = "none";
+         }
+     }
+ 
+     function clear (that) {
+         that.innerHTML = '';
+     }
 
 }
