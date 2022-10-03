@@ -36,7 +36,6 @@ window.onload = function () {
             default:
                 break;
         }
-        // fields[j] = span[j].id;
     }
 
     // Name validation
@@ -58,7 +57,7 @@ window.onload = function () {
                 firstName.classList.remove('fail');
                 span[0].innerHTML = '';
             }
-        } 
+        }
         else if (firstName.value != '') {
             fields[0] = 'nameError';
             firstName.classList.add('fail');
@@ -67,7 +66,7 @@ window.onload = function () {
             fields[0] = 'nameError';
             firstName.classList.remove('fail');
             span[0].innerHTML = '';
-        }  
+        }
     }
 
     firstName.onfocus = function () {
@@ -94,7 +93,7 @@ window.onload = function () {
                 surname.classList.remove('fail');
                 span[1].innerHTML = '';
             }
-        } 
+        }
         else if (surname.value != '') {
             fields[1] = 'surnameError';
             surname.classList.add('fail');
@@ -128,9 +127,9 @@ window.onload = function () {
             if (i == dni.value.length) {
                 fields[2] = '';
                 dni.classList.remove('fail');
-                span[2].innerHTML = ''; 
+                span[2].innerHTML = '';
             }
-        } 
+        }
         else if (dni.value != '') {
             fields[2] = 'dniError';
             dni.classList.add('fail');
@@ -157,7 +156,6 @@ window.onload = function () {
             dob.classList.add('fail');
             span[3].innerHTML = 'Make sure to input a date of birth';
         }
-        // console.log(dob.value)
     }
 
     dob.onclick = function () {
@@ -183,9 +181,9 @@ window.onload = function () {
             if (i == phone.value.length) {
                 fields[4] = '';
                 phone.classList.remove('fail');
-                span[4].innerHTML = ''; 
+                span[4].innerHTML = '';
             }
-        } 
+        }
         else if (phone.value != '') {
             fields[4] = 'phoneError';
             phone.classList.add('fail');
@@ -210,15 +208,6 @@ window.onload = function () {
         var let = numb = space = 0;
         if (address.value.length >= 5) {
             for (var i = 0; i < address.value.length; i++) {
-                // if (address.value[i] == ' ' && address.value[i+1] == '') {
-                //     fields[5] = 'addressError';
-                //     address.classList.add('fail');
-                //     span[5].innerHTML = 'Address should have both text and a number';
-                //     break;
-                // }
-                // else if (address.value[i] == ' ' && !isNaN(address.value[i+1])) {
-                //     v++;
-                // }
                 if (isNaN(address.value[i]) && address.value[i] != ' ') {
                     let++;
                 } else if (!isNaN(address.value[i]) && address.value[i] != ' ') {
@@ -236,7 +225,7 @@ window.onload = function () {
                 address.classList.add('fail');
                 span[5].innerHTML = 'Address should have both text and a number';
             }
-        } 
+        }
         else if (address.value != '') {
             fields[5] = 'addressError';
             address.classList.add('fail');
@@ -267,7 +256,7 @@ window.onload = function () {
                     break;
                 }
             }
-            if (i != location.value.length) {        
+            if (i != location.value.length) {
                 fields[6] = 'locationError';
                 location.classList.add('fail');
             } else {
@@ -308,11 +297,10 @@ window.onload = function () {
             if (i != zipCode.value.length) {
                 fields[7] = 'zipCodeError';
                 zipCode.classList.add('fail');
-                // span[7].innerHTML = 'zip fail'; 
             } else {
                 fields[7] = '';
                 zipCode.classList.remove('fail');
-                span[7].innerHTML = ''; 
+                span[7].innerHTML = '';
             }
         }
         else if (zipCode.value != '') {
@@ -354,59 +342,50 @@ window.onload = function () {
 
     var password = document.getElementById('password');
     password.onblur = function () {
-        var j = f = n = l = L = c = 0;
-        if (password.value.length >= 8) {            
+        var keyCharacter = space = number = lowerCase = upperCase = c = 0;
+        if (password.value.length >= 8) {
             for (var i = 0; i < password.value.length; i++) {
                 switch(true) {
                     case password.value[i] === ' ':
                         password.classList.add('fail');
-                        f++;
+                        space++;
                         break;
-                    case isNaN(password.value[i]) && password.value[i] == password.value[i].toUpperCase() && L == 0:
-                        L++;
-                        j++;
+                    case isNaN(password.value[i]) && password.value[i] == password.value[i].toUpperCase() && upperCase == 0:
+                        upperCase++;
+                        keyCharacter++;
                         break;
-                    case isNaN(password.value[i]) && password.value[i] == password.value[i].toLowerCase() && l == 0:
-                        l++;
-                        j++;
+                    case isNaN(password.value[i]) && password.value[i] == password.value[i].toLowerCase() && lowerCase == 0:
+                        lowerCase++;
+                        keyCharacter++;
                         break;
-                    case !isNaN(password.value[i]) &&  n == 0:
-                        n++;
-                        j++;
+                    case !isNaN(password.value[i]) &&  number == 0:
+                        number++;
+                        keyCharacter++;
                         break;
                     default:
                         break;
                 }
             }
-            if (f != 0) {
+            if (space != 0) {
                 fields[9] = 'passwordError';
                 password.classList.add('fail');
                 span[9].innerHTML = 'Password should not have spaces';
-            } else if (L == 0 || l == 0) {
+            }
+            else if (upperCase == 0 || lowerCase == 0) {
                 fields[9] = 'passwordError';
                 password.classList.add('fail');
                 span[9].innerHTML = 'Password should have at least one uppercase and one lower case letter';
-            } else if (n == 0) {
+            }
+            else if (number == 0) {
                 fields[9] = 'passwordError';
                 password.classList.add('fail');
                 span[9].innerHTML = 'Password should have at least one number';
-            } else if (j == 3) {
+            }
+            else if (keyCharacter == 3) {
                 fields[9] = '';
                 password.classList.remove('fail');
                 span[9].innerHTML = '';
             }
-
-
-
-            // if (j < 3 || f != 0) {
-            //     fields[9] = 'passwordError';
-            //     password.classList.add('fail');
-            //     span[9].innerHTML = 'Please input a valid password';
-            // } else {
-            //     fields[9] = '';
-            //     password.classList.remove('fail');
-            //     span[9].innerHTML = '';
-            // }
         }
         else if (password.value != '') {
             fields[9] = 'passwordError';
@@ -442,7 +421,7 @@ window.onload = function () {
     // Register form event
 
     var button = document.getElementById('create');
-    
+
     button.onclick = function (e) {
         e.preventDefault();
         //var error, failure = success = '';
@@ -455,13 +434,11 @@ window.onload = function () {
                     errorCount++;
                     if (firstName.value == '') {
                         error.innerHTML = 'Please input a name';
-                        //failure = 'Name missing\n';
                         modalContent[i].innerHTML = 'Name missing';
-                        modalContent[i].classList.add('test');
+                        modalContent[i].classList.add('add-margin');
                     } else {
-                        //failure = 'Please input a valid name\n';
                         modalContent[i].innerHTML = 'Please input a valid name';
-                        modalContent[i].classList.add('test');
+                        modalContent[i].classList.add('add-margin');
                     }
                     break;
                 case fields[i] === 'surnameError':
@@ -469,13 +446,11 @@ window.onload = function () {
                     errorCount++;
                     if (surname.value == '') {
                         error.innerHTML = 'Please input a surname';
-                        //failure = failure + 'Surname missing\n';
                         modalContent[i].innerHTML = 'Surname missing';
-                        modalContent[i].classList.add('test');
+                        modalContent[i].classList.add('add-margin');
                     } else {
-                        //failure = failure + 'Please input a valid surnaname\n';
                         modalContent[i].innerHTML = 'Please input a valid surname';
-                        modalContent[i].classList.add('test');
+                        modalContent[i].classList.add('add-margin');
                     }
                     break;
                 case fields[i] === 'dniError':
@@ -483,13 +458,11 @@ window.onload = function () {
                     errorCount++;
                     if (dni.value == '') {
                         error.innerHTML = 'Please input a DNI';
-                        //failure = failure + 'DNi missing\n';
                         modalContent[i].innerHTML = 'DNI missing';
-                        modalContent[i].classList.add('test');
+                        modalContent[i].classList.add('add-margin');
                     } else {
-                        //failure = failure + 'Please input a valid DNI\n';
                         modalContent[i].innerHTML = 'Please input a valid DNI';
-                        modalContent[i].classList.add('test');
+                        modalContent[i].classList.add('add-margin');
                     }
                     break;
                 case fields[i] === 'birthDateError':
@@ -497,9 +470,8 @@ window.onload = function () {
                     errorCount++;
                     if (dob.value == '') {
                         error.innerHTML = 'Please input a Date of Birth';
-                        //failure = failure + 'Date of Birth missing\n';
                         modalContent[i].innerHTML = 'Date of Birth missing';
-                        modalContent[i].classList.add('test');
+                        modalContent[i].classList.add('add-margin');
                     }
                     break;
                 case fields[i] === 'phoneError':
@@ -507,13 +479,11 @@ window.onload = function () {
                     errorCount++;
                     if (phone.value == '') {
                         error.innerHTML = 'Please input a phone number';
-                        //failure = failure + 'Phone number missing\n';
                         modalContent[i].innerHTML = 'Phone number missing';
-                        modalContent[i].classList.add('test');
+                        modalContent[i].classList.add('add-margin');
                     } else {
-                        //failure = failure + 'Please input a valid phone number\n';
                         modalContent[i].innerHTML = 'Please input a valid phone number';
-                        modalContent[i].classList.add('test');
+                        modalContent[i].classList.add('add-margin');
                     }
                     break;
                 case fields[i] === 'addressError':
@@ -521,13 +491,11 @@ window.onload = function () {
                     errorCount++;
                     if (address.value == '') {
                         error.innerHTML = 'Please input an address';
-                        //failure = failure + 'Address missing\n';
                         modalContent[i].innerHTML = 'Address missing';
-                        modalContent[i].classList.add('test');
+                        modalContent[i].classList.add('add-margin');
                     } else {
-                        //failure = failure + 'Please input a valid address\n';
                         modalContent[i].innerHTML = 'Please input a valid address';
-                        modalContent[i].classList.add('test');
+                        modalContent[i].classList.add('add-margin');
                     }
                     break;
                 case fields[i] === 'locationError':
@@ -535,13 +503,11 @@ window.onload = function () {
                     errorCount++;
                     if (location.value == '') {
                         error.innerHTML = 'Please input a location';
-                        //failure = failure + 'Location missing\n';
                         modalContent[i].innerHTML = 'Loacation missing';
-                        modalContent[i].classList.add('test');
+                        modalContent[i].classList.add('add-margin');
                     } else {
-                        //failure = failure + 'Please input a valid location\n';
                         modalContent[i].innerHTML = 'Please input a valid location';
-                        modalContent[i].classList.add('test');
+                        modalContent[i].classList.add('add-margin');
                     }
                     break;
                 case fields[i] === 'zipCodeError':
@@ -549,13 +515,11 @@ window.onload = function () {
                     errorCount++;
                     if (zipCode.value == '') {
                         error.innerHTML = 'Please input a Zip Code';
-                        //failure = failure + 'Zip Code missing\n';
                         modalContent[i].innerHTML = 'Zip Code missing';
-                        modalContent[i].classList.add('test');
+                        modalContent[i].classList.add('add-margin');
                     } else {
-                        //failure = failure + 'Please input a valid Zip Code\n';
                         modalContent[i].innerHTML = 'Please input a valid zip code';
-                        modalContent[i].classList.add('test');
+                        modalContent[i].classList.add('add-margin');
                     }
                     break;
                 case fields[i] === 'emailError':
@@ -563,13 +527,11 @@ window.onload = function () {
                     errorCount++;
                     if (email.value == '') {
                         error.innerHTML = 'Please input an email';
-                        //failure = failure + 'Email missing\n';
                         modalContent[i].innerHTML = 'Email address missing';
-                        modalContent[i].classList.add('test');
+                        modalContent[i].classList.add('add-margin');
                     } else {
-                        //failure = failure + 'Please input a valid email\n';
                         modalContent[i].innerHTML = 'Please input a valid email';
-                        modalContent[i].classList.add('test');
+                        modalContent[i].classList.add('add-margin');
                     }
                     break;
                 case fields[i] === 'passwordError':
@@ -577,46 +539,27 @@ window.onload = function () {
                     errorCount++;
                     if (password.value == '') {
                         error.innerHTML = 'Please input a password';
-                        //failure = failure + 'Password missing\n';
                         modalContent[i].innerHTML = 'Password missing';
-                        modalContent[i].classList.add('test');
+                        modalContent[i].classList.add('add-margin');
                     } else {
-                        //failure = failure + 'Please input a valid password\n';
                         modalContent[i].innerHTML = 'Please input a valid password';
-                        modalContent[i].classList.add('test');
+                        modalContent[i].classList.add('add-margin');
                     }
                     break;
                 case fields[i] === 'passwordRepeatError':
                     error = document.getElementById('passwordRepeatError');
                     errorCount++;
-                    //failure = failure + 'Please make sure passwords match\n';
                     modalContent[i].innerHTML = 'Please input a make sure passwords match';
-                    modalContent[i].classList.add('test');
+                    modalContent[i].classList.add('add-margin');
                     break;
                 default:
                     break;
             }
         }
-        // if (failure != '') {
         if (errorCount != 0) {
-            // alert(failure);
-            // for (var i = 0; i < fields.length; i++) {
-            //     modalContent[i].innerHTML = fields[i]; 
-            // }
             text.innerHTML = 'Failure: check input arguments';
             modal.style.display = 'flex';
-
         } else {
-            // success = firstName.value + '\n' + surname.value + '\n' + dni.value + '\n' + dob.value + '\n' 
-            // + phone.value + '\n' + address.value + '\n' + location.value + '\n' + zipCode.value + '\n' + email.value + '\n' 
-            // + password.value;
-            // var values = [firstName.value, surname.value, dni.value, dob.value, phone.value, address.value, location.value,
-            // zipCode.value, email.value, password.value];
-            // var keys = ['name', 'Last Name', 'DNI', 'Date of Birth', 'Phone Number', 'Address', 'City', 
-            // 'Zip Code', 'Email', 'Password'];
-            // alert('Account creation Successful\n' + success);
-            var response = '';
-
             fetch('https://basp-m2022-api-rest-server.herokuapp.com/signup?' + new URLSearchParams({
                 name: firstName.value,
                 lastName: surname.value,
@@ -633,20 +576,13 @@ window.onload = function () {
                     if (result.status >= 400) {
                         result.json()
                             .then((res) => {
-                                console.log(res)
-                                // for (var i = 0; i < res.errors.length; i++) {
-                                //     response = response + res.errors[i].msg + '\n';
-                                // }
-                                // console.log(response)
-                                // throw new Error (result.status + ' ' + result.statusText + '\n' + response);
                                 for (var i = 0; i < res.errors.length; i++) {
                                    modalContent[i].innerHTML = res.errors[i].msg;
-                                   modalContent[i].classList.add('test'); 
+                                   modalContent[i].classList.add('add-margin');
                                 }
                                 throw new Error (res.msg)
                             })
                             .catch((err) => {
-                                // alert(err);
                                 text.innerHTML = 'Response from server: ' + result.status + ' ' + result.statusText;
                                 modal.style.justifyContent = 'center';
                                 modal.style.display = "flex";
@@ -655,30 +591,20 @@ window.onload = function () {
                     else {
                         result.json()
                             .then((res) => {
-                                console.log(res)
                                 var f = 0;
                                 for (var prop in res.data) {
-                                    // localStorage.setItem(`${property}`, `${res.data[property]}`);
-                                    // success = success + `${property}: ${res.data[property]}\n`;
-                                    console.log(prop, res.data[prop])
-                                    // if (prop !== 'id') {
-                                    //     localStorage.setItem(prop, res.data[prop]);
-                                    //     success = success + prop + ': ' + res.data[prop] + '\n';
-                                    // }
                                     localStorage.setItem(prop, res.data[prop]);
                                     modalContent[f].innerHTML = prop + ': ' + res.data[prop] + '\n';
-                                    modalContent[f].classList.add('test');
+                                    modalContent[f].classList.add('add-margin');
                                     f++;
                                 }
-                                console.log(text)
-                                // alert('Request successful\n' + 'Response from Server: ' + res.msg + '\n' + success);
                                 text.innerHTML = 'Response from server: ' + result.status + ' ' + result.statusText;
                                 modal.style.justifyContent = 'center';
                                 modal.style.display = "flex";
                             })
                             .catch(() => {
                                 alert('Something went wrong with the request');
-                            })  
+                            })
                     }
                 })
                 .catch(() => {
@@ -706,7 +632,7 @@ window.onload = function () {
         }
         else {
             date = date.substring(6) + '-' + date.substring(0,2) + '-' + date.substring(3,5);
-            return date;       
+            return date;
         }
     }
 
@@ -716,16 +642,16 @@ window.onload = function () {
      var modalContent = document.querySelectorAll('.modal-body > p');
      var cross = document.getElementsByClassName("close")[0];
      var text = document.getElementsByClassName("modal-text-span")[0];
- 
+
      cross.onclick = function() {
          for (var i = 0; i < modalContent.length; i++) {
              clear(modalContent[i]);
          }
          modal.style.display = "none";
      }
- 
+
      window.onclick = function(event) {
-         
+
          if (event.target == modal) {
              for (var i = 0; i < modalContent.length; i++) {
                  clear(modalContent[i]);
@@ -733,8 +659,9 @@ window.onload = function () {
              modal.style.display = "none";
          }
      }
- 
+
      function clear (that) {
+        that.classList.remove('add-margin');
          that.innerHTML = '';
      }
 
