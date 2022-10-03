@@ -50,7 +50,7 @@ h2 {
     font-weight: 400;
     text-decoration-line: underline;
     text-decoration-color: #FF3E1D;
-    text-decoration-thickness: 2px; 
+    text-decoration-thickness: 2px;
 }
 
 h3 {
@@ -77,8 +77,8 @@ button {
     text-align: center;
     border: none;
     color: white;
-    background-color: white; 
-    color: #FF5349; 
+    background-color: white;
+    color: #FF5349;
     border: 1px solid #FF5349;
     border-radius: 2px;
     text-decoration: none;
@@ -86,7 +86,7 @@ button {
     font-weight: bold;
     transition-duration: 0.4s;
     cursor: pointer;
-} 
+}
 
 button:hover {
     color: white;
@@ -115,12 +115,8 @@ i:hover {
 
 .modal-header {
     padding: 16px 16px 5px 16px;
-  }
+}
 
-  /* .modal-text-span {
-    font-size: 20px;
-  } */
-  
 .modal-body {
     display: flex;
     flex-direction: column;
@@ -129,10 +125,10 @@ i:hover {
     padding: 2px 16px;
 }
 
-.test {    
+.add-margin {
     margin: 5px;
 }
-  
+
 .modal-content {
     display: flex;
     flex-direction: column;
@@ -146,14 +142,14 @@ i:hover {
     animation-name: animatetop;
     animation-duration: 0.4s
   }
-  
+
 .close {
     color: #373867;
     float: right;
     font-size: 18px;
     font-weight: bold;
 }
-  
+
 .close:hover, .close:focus {
     color: white;
     text-decoration: none;
@@ -189,7 +185,7 @@ i:hover {
     .modal-text-span {
         font-size: 20px;
     }
-    .modal-body > p {    
+    .modal-body > p {
         font-size: 18px;
     }
     .close {
